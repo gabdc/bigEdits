@@ -1,112 +1,128 @@
-<!DOCTYPE html>
 <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Request for a Quote</title>
 
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Request a Quote</title>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
-            integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
-            crossorigin="anonymous" />
-
-        <!-- Styles -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.0.4/tailwind.min.css">
-    </head>
-
-    <body>
-        <section class="flex items-center justify-center">
-            <div class="md:w-1/2 flex items-center justify-center w-full py-10">
-                <form action="#" method="POST">
-                    <div class="flex flex-col w-full px-10 space-y-16">
-                        <div class="py-2 space-y-2">
-                            <label for="name" class=" text-2xl font-bold"> What's your Name? </label>
-                            <input type="name" id="name"   class="focus:outline-none w-full px-2 py-1 border-b border-gray-500">
-                            <p>
-                                Thank you for showing interest in our service
-                            </p>
-                        </div>
+    <!-- tailwind -->
+    <link rel="stylesheet" href="/build/tailwind.css">
     
-                        <div class="py-2 space-y-2">
-                            <label for="email" class=" text-xl font-bold">Which Email Address shall we
-                                use?</label>
-                            <input type="email" id="email" class="focus:outline-none w-full px-2 py-1 border-b border-gray-500">
-                            <p>
-                                Enter your email
-                            </p>
-                        </div>
-    
-                        <div class=" flex flex-col items-start justify-start space-y-2">
-                            <p class="text-2xl font-bold">Hey Visitor, pick the video
-                                you want us to edit</p>
-                            <div class="md:grid-cols-3 grid items-center justify-center grid-cols-1 gap-8 py-4">
-                                <div class="rounded-xl w-52 flex items-center justify-center h-12 bg-blue-300">
-                                    <input id="wedding" name="wedding" type="checkbox" class="w-4 h-4">
-                                    <label for="wedding" class="text-md px-2 text-gray-800">Wedding</label>
-                                </div>
-                                <div class="rounded-xl w-52 flex items-center justify-center h-12 bg-blue-300">
-                                    <input id="holiday" name="holiday" type="checkbox" class="w-4 h-4">
-                                    <label for="holiday" class="text-md px-2 text-gray-800">Holiday/Vacation</label>
-                                </div>
-                                <div class="rounded-xl w-52 flex items-center justify-center h-12 bg-blue-300">
-                                    <input id="corporate" name="corporate" type="checkbox" class="w-4 h-4">
-                                    <label for="corporate" class="text-md px-2 text-gray-800">Corporate</label>
-                                </div>
-                                <div class="rounded-xl w-52 flex items-center justify-center h-12 bg-blue-300">
-                                    <input id="goPro" name="goPro" type="checkbox" class="w-4 h-4">
-                                    <label for="goPro" class="text-md px-2 text-gray-800">GoPro</label>
-                                </div>
-                                <div class="rounded-xl w-52 flex items-center justify-center h-12 bg-blue-300">
-                                    <input id="family" name="family" type="checkbox" class="w-4 h-4">
-                                    <label for="family" class="text-md px-2 text-gray-800">Family</label>
-                                </div>
-                                <div class="rounded-xl w-52 flex items-center justify-center h-12 bg-blue-300">
-                                    <input id="drone" name="drone" type="checkbox" class="w-4 h-4">
-                                    <label for="drone" class="text-md px-2 text-gray-800">Drone</label>
-                                </div>
-                                <div class="rounded-xl w-52 flex items-center justify-center h-12 bg-blue-300">
-                                    <input id="drone" name="drone" type="checkbox" class="w-4 h-4">
-                                    <label for="drone" class="text-md px-2 text-gray-800">Drone</label>
-                                </div>
-                                <div class="rounded-xl flex items-center justify-center w-64 h-12 bg-blue-300">
-                                    <label class="text-md px-2">Others:</label>
-                                    <input type="name" id="others" class=" w-64 px-2 border-b-2 border-blue-300">
-                                </div>
-                            </div>
-                        </div>
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css"
+        integrity="sha384-wESLQ85D6gbsF459vf1CiZ2+rr+CsxRY0RpiF1tLlQpDnAgg6rwdsUF1+Ics2bni" crossorigin="anonymous">
 
-                        <div>
-                            <label for="about" class="text-2xl font-bold text-center">
-                            Tell us about your project
-                            </label>
-                            <div class="py-4">
-                            <textarea id="about" name="about" rows="12" class="md:text-xl w-full p-4 text-gray-900 bg-blue-300 rounded-md shadow-sm" placeholder="Message"></textarea>
-                            </div>
-                        </div>
-
-                        <div class="flex flex-col items-center justify-center space-y-2">
-                            <button class="rounded-xl h-14 w-48 bg-blue-300">
-                                <h2 class="text-xl font-bold text-white uppercase">Submit</h2>
-                            </button>
-                            <p class="text-md font-semibold text-gray-400">
-                                Press ENTER
-                            </p>
-                        </div>
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500;700;800&family=Montserrat:wght@500;700&display=swap"
+        rel="stylesheet">
     
-                    </div>
-                </form>
+    <!-- styles -->
+    <style>
+        @font-face {
+            font-family:'Montserrat', sans-serif;
+            src: url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
+        }
+
+         @font-face {
+            font-family:'Jost', sans-serif;
+            src: url('https://fonts.googleapis.com/css2?family=Jost:wght@500;700;800&display=swap');
+        }
+    
+        .font-montserrat {
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .font-jost {
+            font-family: 'Jost', sans-serif;
+        }
+    </style>
+</head>
+<body class="w-full h-full bg-top bg-no-repeat" style="background-image: url('pictures/bgrq.svg');">
+
+    <form class="flex flex-col w-full h-full px-6 pt-20 space-y-10 md:space-y-20 md:pt-32 md:px-20 lg:space-y-40 lg:px-80 lg:pt-88 2xl:pt-96">
+
+        <div class="flex flex-col w-full space-y-20 md:space-y-40 lg:space-y-72">
+            <!-- Name -->
+            <div class="flex flex-col w-full">
+                <p class="text-xl font-extrabold text-black md:text-2xl lg:text-3xl font-jost"><span class="text-[#C50101]">* </span>What’s your name?</p>
+            
+                <div class="mt-8 ml-4 border-b border-black w-72 md:ml-8 md:w-full md:mt-14 lg:mt-28">
+                    <input type="text" class="w-full text-xs font-medium bg-transparent md:text-base focus:outline-none font-montserrat">
+                </div>
+            
+                <p class="mt-4 ml-4 text-xs font-medium text-black md:ml-8 md:text-base md:mt-6 lg:mt-10 lg:text-lg font-montserrat">Thank you for showing interest in our service</p>
             </div>
-        </section>
+            
+            <!-- Email -->
+            <div class="flex flex-col w-full">
+                <p class="text-xl font-extrabold text-black md:text-2xl lg:text-3xl font-jost"><span class="text-[#C50101]">* </span>Which email address
+                    shall we use?</p>
+            
+                <div class="mt-8 ml-4 border-b border-black w-72 md:ml-8 md:w-full md:mt-14 lg:mt-28">
+                    <input type="email" class="w-full text-xs font-medium bg-transparent md:text-base focus:outline-none font-montserrat">
+                </div>
+            
+                <p class="mt-4 ml-4 text-xs font-medium text-black uppercase md:ml-8 md:text-base md:mt-6 lg:mt-10 lg:text-lg font-montserrat">Enter email</p>
+            </div>
+            
+            <!-- Service -->
+            <div class="flex flex-col w-full">
+                <p class="text-xl font-extrabold text-black md:text-2xl lg:text-3xl font-jost"><span class="text-[#C50101]">* </span>Hey Visitor, pick the
+                    video you want us to edit</p>
+                
+                <div class="flex flex-col items-center justify-center">
+                    <div class="flex flex-row border border-[#928989] h-12 md:h-16 w-60 md:w-80 lg:w-96 justify-between mt-8 md:mt-10 bg-[#ECEBEB]">
+                    
+                        <p class="flex items-center justify-start px-4 py-2 font-bold text-black md:text-xl lg:text-2xl font-montserrat">
+                            Select a
+                            service</p>
+                    
+                        <!-- drop down button -->
+                        <button type="button" class="focus:outline-none flex bg-[#02B1AF] h-12 md:h-16 w-12 md:w-20 items-center justify-center"
+                            onclick="toggleElement('dropdown')">
+                            <i class="text-xl text-white md:text-2xl lg:text-3xl fas fa-chevron-down"></i>
+                        </button>
+                    </div>
+                    <!-- drop down menu -->
+                    <div id="dropdown" class="hidden flex flex-col border border-[#928989] bg-[#ECEBEB] h-40 md:h-48 lg:h-52 w-60 md:w-80 lg:w-96 text-black font-bold md:text-xl lg:text-2xl font-montserrat">
+                        <p class="px-4 py-2">Select a service</p>
+                        <a href="#"
+                            class="py-2 px-4 hover:bg-[#02B1AF] hover:bg-opacity-50 focus:bg-[#02B1AF] focus:bg-opacity-50">Wedding</a>
+                        <a href="#"
+                            class="py-2 px-4 hover:bg-[#02B1AF] hover:bg-opacity-50 focus:bg-[#02B1AF] focus:bg-opacity-50">Corporate</a>
+                        <a href="#"
+                            class="py-2 px-4 hover:bg-[#02B1AF] hover:bg-opacity-50 focus:bg-[#02B1AF] focus:bg-opacity-50">YouTube</a>
+                    </div>
+                </div>
+                
+            </div>
+            
+            <!-- About -->
+            <div class="flex flex-col w-full">
+                <p class="text-xl font-extrabold text-black md:text-2xl lg:text-3xl font-jost"><span class="text-[#C50101]">* </span>Tell us about your
+                    project</p>
+            
+                <textarea cols="30" rows="10"
+                    class="bg-[#02B1AF] focus:outline-none rounded-3xl w-full h-40 md:h-80 lg:h-96 mt-10 p-4 text-white md:text-base text-xs lg:text-lg font-montserrat shadow-lg font-medium"></textarea>
+            </div>
+        </div>
+        
+        <!-- Submit -->
+        <div class="flex flex-col items-center justify-center pb-20 text-lg md:text-2xl lg:pb-40 lg:text-3xl font-jost">
+            <button class="text-white font-extrabold uppercase h-12 md:h-14 w-28 md:w-40 lg:w-48 shadow bg-[#02B1AF] rounded-lg">submit</button>
+        </div>
 
-
-
-
-
-
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js "
-            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin=" anonymous "></script>
-        <script src="./script.js "></script>
-    </body>
-
-
+    </form>
+  
+<!-- script -->
+<script>
+    function toggleElement(elemID) {
+        document.getElementById(elemID).classList.toggle("hidden");
+        document.getElementById(elemID).classList.toggle("block");
+    }
+</script>
+</body>
 </html>

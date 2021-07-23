@@ -1,0 +1,66 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contact Us</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+        <link rel="stylesheet" href="/build/tailwind.css">
+        <!-- fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
+        <style>
+            @font-face {
+                font-family: 'Montserrat', sans-serif;
+                src: url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
+            }
+    
+            .font-montserrat {
+                font-family: 'Montserrat', sans-serif;
+            }
+        </style>
+</head>
+
+<body class="w-full h-full bg-fixed bg-cover" style="background-image: url('pictures/bg.svg')">
+    <div class="flex items-center justify-center w-full h-full overflow-hidden font-montserrat">
+
+        <div class="flex flex-col w-auto h-auto p-10 space-y-6 uppercase">
+            <span class="font-medium text-center">you can reach us on +1 718 618 4384</span>
+
+            <span class="font-semilight">please fill in the form and we will get in touch shortly</span>
+            <!-- Form -->
+            <div class="flex flex-col space-y-8">
+
+                <div class="flex flex-col justify-center space-y-8 md:flex-row md:justify-between md:space-y-0">
+                    <div class="space-y-4 border-b-4 border-black ">
+                        <h2 class="font-bold tracking-widest">first name*</h2>
+                        <input type="text" class="w-full py-1 pl-2 text-black bg-transparent focus:outline-none">
+                    </div>
+
+                    <div class="space-y-4 border-b-4 border-black ">
+                        <h2 class="font-bold tracking-widest">last name*</h2>
+                        <input type="text"  class="w-full py-1 pl-2 text-black bg-transparent focus:outline-none">
+                    </div>
+                </div>
+
+                <div class="space-y-4 border-b-4 border-black">
+                    <h2 class="font-bold tracking-widest">email*</h2>
+                    <input type="email" class="w-full py-1 pl-2 text-black bg-transparent focus:outline-none">
+                </div>
+
+                <div class="border-b-4 border-black ">
+                    <h2 class="font-bold tracking-widest">message*</h2>
+                    <textarea rows="4" name="message" id="message" class="w-full pl-2 bg-transparent focus:outline-none" required></textarea>
+                </div>
+                
+            <!-- Button -->
+               <div class="flex items-end justify-end">
+                    <button class="bg-[#02B1AF] px-14 py-2 text-white uppercase rounded-md shadow-xl text-sm">
+                        Enter
+                    </button>
+               </div>
+            </div>
+        </div>
+    </div>
+</body>
