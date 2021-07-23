@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Virtual Stage Editing Services</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+            integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+            crossorigin="anonymous" />
+
+        <!-- Styles -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.0.4/tailwind.min.css">
+    </head>
+
+    <body>
+        <div>
+            <nav
+                class="md:px-24 md:justify-between z-50 flex flex-row items-center justify-center w-screen h-24 px-6 bg-white">
+                <div class="flex items-center justify-start">
+                    <a href="#">
+                        <img src="pictures/logo-nav.png" class="w-44">
+                    </a>
+                </div>
+
+                <div class="md:flex-wrap flex flex-row items-center justify-end space-x-8">
+                    <div class="md:block relative items-center hidden space-x-8">
+                        <button onclick="toggleElement('video')"
+                            class="group hover:text-gray-900 focus:outline-none inline-flex items-center text-base font-medium text-gray-500 bg-white rounded-md"
+                            aria-expanded="false">
+                            <span>Video Editing Services</span>
+
+                            <svg class="group-hover:text-gray-500 w-5 h-5 ml-2 text-gray-400"
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                aria-hidden="true">
+                                <path fill-rule="evenodd"
+                                    d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                        </button>
+                        <div class="left-1/2 sm:px-0 absolute z-10 hidden w-screen max-w-md px-2 mt-3 transform -translate-x-1/2"
+                            id="video">
+                            <div class="ring-1 ring-black ring-opacity-5 overflow-hidden rounded-lg shadow-lg">
+                                <div class="sm:gap-8 sm:p-8 relative grid gap-6 px-5 py-6 uppercase bg-white">
+                                    <a href="#" class="hover:bg-gray-50 flex items-start p-3 -m-3 rounded-lg">
+                                        <p class="text-base font-medium text-gray-900">
+                                            wedding video editng
+                                        </p>
+                                    </a>
+                                    <a href="#" class="hover:bg-gray-50 flex items-start p-3 -m-3 rounded-lg">
+                                        <p class="text-base font-medium text-gray-900">
+                                            corporate video editing
+                                        </p>
+                                    </a>
+                                    <a href="#" class="hover:bg-gray-50 flex items-start p-3 -m-3 rounded-lg">
+                                        <p class="text-base font-medium text-gray-900">
+                                            gopro video editing
+                                        </p>
+                                    </a>
+                                    <a href="#" class="hover:bg-gray-50 flex items-start p-3 -m-3 rounded-lg">
+                                        <p class="text-base font-medium text-gray-900">
+                                            drone video editing
+                                        </p>
+                                    </a>
+                                    <a href="#" class="hover:bg-gray-50 flex items-start p-3 -m-3 rounded-lg">
+                                        <p class="text-base font-medium text-gray-900">
+                                            family video editing
+                                        </p>
+                                    </a>
+                                    <a href="#" class="hover:bg-gray-50 flex items-start p-3 -m-3 rounded-lg">
+                                        <p class="text-base font-medium text-gray-900">
+                                            holiday video editing
+                                        </p>
+                                    </a>
+                                    <a href="#" class="hover:bg-gray-50 flex items-start p-3 -m-3 rounded-lg">
+                                        <p class="text-base font-medium text-gray-900">
+                                            picture to video editing
+                                        </p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="md:block relative items-center hidden space-x-8">
+                        <button onclick="toggleElement('work')"
+                            class="group hover:text-gray-900 focus:outline-none inline-flex items-center text-base font-medium text-gray-500 bg-white rounded-md"
+                            aria-expanded="false">
+                            <span>Our Work</span>
+
+                            <svg class="group-hover:text-gray-500 w-5 h-5 ml-2 text-gray-400"
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                aria-hidden="true">
+                                <path fill-rule="evenodd"
+                                    d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                        </button>
+                        <div class="left-1/2 sm:px-0 absolute z-10 hidden w-screen max-w-md px-2 mt-3 transform -translate-x-1/2"
+                            id="work">
+                            <div class="ring-1 ring-black ring-opacity-5 overflow-hidden rounded-lg shadow-lg">
+                                <div class="sm:gap-8 sm:p-8 relative grid gap-6 px-5 py-6 uppercase bg-white">
+                                    <a href="#" class="hover:bg-gray-50 flex items-start p-3 -m-3 rounded-lg">
+                                        <p class="text-md font-semibold text-gray-900">
+                                            Wedding Portfolio
+                                        </p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="md:block relative items-center hidden space-x-8">
+                        <button onclick="toggleElement('pricing')"
+                            class="group hover:text-gray-900 focus:outline-none inline-flex items-center text-base font-medium text-gray-500 bg-white rounded-md"
+                            aria-expanded="false">
+                            <span>View Pricing</span>
+
+                            <svg class="group-hover:text-gray-500 w-5 h-5 ml-2 text-gray-400"
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                aria-hidden="true">
+                                <path fill-rule="evenodd"
+                                    d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                        </button>
+                        <div class="left-1/2 sm:px-0 absolute z-10 hidden w-screen max-w-md px-2 mt-3 transform -translate-x-1/2"
+                            id="pricing">
+                            <div class="ring-1 ring-black ring-opacity-5 overflow-hidden rounded-lg shadow-lg">
+                                <div class="sm:gap-8 sm:p-8 relative grid gap-6 px-5 py-6 uppercase bg-white">
+                                    <a href="#" class="hover:bg-gray-50 flex items-start p-3 -m-3 rounded-lg">
+                                        <p class="text-md font-semibold text-gray-900">
+                                            Request a Quote
+                                        </p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="md:block relative items-center hidden space-x-8">
+                        <button onclick="toggleElement('account')"
+                            class="group hover:text-gray-900 focus:outline-none inline-flex items-center text-base font-medium text-gray-500 bg-white rounded-md"
+                            aria-expanded="false">
+                            <span>My Account</span>
+
+                            <svg class="group-hover:text-gray-500 w-5 h-5 ml-2 text-gray-400"
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                aria-hidden="true">
+                                <path fill-rule="evenodd"
+                                    d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                        </button>
+                        <div class="left-1/2 sm:px-0 absolute z-10 hidden w-screen max-w-md px-2 mt-3 transform -translate-x-1/2"
+                            id="account">
+                            <div class="ring-1 ring-black ring-opacity-5 overflow-hidden rounded-lg shadow-lg">
+                                <div class="sm:gap-8 sm:p-8 relative grid gap-6 px-5 py-6 uppercase bg-white">
+                                    <a href="#" class="hover:bg-gray-50 flex items-start p-3 -m-3 rounded-lg">
+                                        <p class="text-md font-semibold text-gray-900">
+                                            Upload Footage
+                                        </p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="md:block relative items-center hidden space-x-8">
+                        <button onclick="toggleElement('contact')"
+                            class="group hover:text-gray-900 focus:outline-none inline-flex items-center text-base font-medium text-gray-500 bg-white rounded-md"
+                            aria-expanded="false">
+                            <span>Contact</span>
+
+                            <svg class="group-hover:text-gray-500 w-5 h-5 ml-2 text-gray-400"
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                aria-hidden="true">
+                                <path fill-rule="evenodd"
+                                    d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                        </button>
+                        <div class="left-1/2 sm:px-0 absolute z-10 hidden w-screen max-w-md px-2 mt-3 transform -translate-x-1/2"
+                            id="contact">
+                            <div class="ring-1 ring-black ring-opacity-5 overflow-hidden rounded-lg shadow-lg">
+                                <div class="sm:gap-8 sm:p-8 relative grid gap-6 px-5 py-6 uppercase bg-white">
+                                    <a href="#" class="hover:bg-gray-50 flex items-start p-3 -m-3 rounded-lg">
+                                        <p class="text-md font-semibold text-gray-900">
+                                            FAQS
+                                        </p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="md:hidden block">
+                        <button class="navbtn p-3 ml-auto" data-target="#navigation"
+                            onClick="toggleElement('navigation')">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+                                    d="M4 6h16M4 12h16M4 18h16" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </nav>
+            <div id="navigation" class="absolute z-10 hidden w-screen p-6 bg-white">
+                <div class="flex flex-col">
+                    <a href="landing.html"
+                        class="md:w-auto hover:underline hover:text-gray-700 px-4 py-2 text-gray-500">
+                        <span>Home</span>
+                    </a>
+                    <a href="#" class="md:w-auto hover:underline hover:text-gray-700 px-4 py-2 text-gray-500">
+                        <span class="">Video Editing Services</span>
+                    </a>
+                    <a href="#" class="md:w-auto hover:underline hover:text-gray-700 px-4 py-2 text-gray-500">
+                        <span class="">Our Work</span>
+                    </a>
+                    <a href="#" class="md:w-auto hover:underline hover:text-gray-700 px-4 py-2 text-gray-500">
+                        <span class="">View Pricing</span>
+                    </a>
+                    <a href="#" class="md:w-auto hover:underline hover:text-gray-700 px-4 py-2 text-gray-500">
+                        <span class="">My Account</span>
+                    </a>
+                    <a href="#" class="md:w-auto hover:underline hover:text-gray-700 px-4 py-2 text-gray-500">
+                        <span class="">Contact</span>
+                    </a>
+                </div>
+            </div>
+
+            <section
+                class="md:px-32 md:bg-cover h-1/2 flex flex-col items-center justify-center w-screen px-6 py-8 space-y-12 text-center text-white bg-center"
+                style="background-image: url('pictures/virtualstage/header.png')">
+                <h2 class="md:text-5xl text-2xl font-extrabold text-center uppercase"> Upgrade your livestream </h2>
+                <p class="md:px-48 px-8 text-xl">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua.
+                </p>
+                <div
+                    class="md:flex-row md:space-x-16 md:space-y-0 flex flex-col items-center justify-center space-x-0 space-y-6">
+                    <button class=" w-56 h-12 border-2 border-blue-400">
+                        <h2 class="text-xl font-bold text-white uppercase">Learn More</h2>
+                    </button>
+                    <button class="rounded-xl w-56 h-12 bg-blue-400">
+                        <h2 class="text-xl font-bold text-white uppercase">Start Project</h2>
+                    </button>
+                </div>
+            </section>
+
+            <section class="md:px-64 h-1/2 flex flex-col items-center justify-center w-screen px-8 py-16 space-y-12 text-white bg-center"
+                style="background-image: url('pictures/virtualstage/gradientBG.png')">
+                <div class="md:grid-cols-2 md:gap-12 grid items-center justify-center w-full h-full grid-cols-1">
+                    <!-- Virtual Stage Design-->
+                    <div class="md:order-none flex items-center justify-center order-3 w-full h-full">
+                        <img src="pictures/youtube/young-milenial.jpg" alt="youtube-content" alt="youtube-content"
+                            class="md:h-96 w-full h-48">
+                    </div>
+                    <div class="md:order-none flex flex-col items-center justify-center order-4 py-12 space-y-8">
+                        <div class="space-y-4 text-center">
+                            <h2 class="md:text-4xl text-xl font-bold uppercase">Virtual Stage Design </h2>
+                            <p class=" text-xl text-justify">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                sed do eiusmod tempor incididunt ut labore et dolore
+                                magna aliqua.
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                sed do eiusmod tempor incididunt ut labore et dolore
+                                magna aliqua.
+                            </p>
+                        </div>
+                        <div class="flex items-center justify-center">
+                            <button class="rounded-xl bg-gradient-to-r from-blue-400 to-blue-200 w-56 h-12">
+                                <h2 class="text-xl font-bold text-white uppercase">Start Project</h2>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="md:px-32 flex flex-col items-center justify-center px-8 py-16 space-y-12 bg-center"
+                style="background-image: url('pictures/virtualstage/bg-body.png')">
+                <div class="flex flex-col items-center justify-center space-y-12 text-center">
+                    <h2 class="md:text-5xl text-3xl font-extrabold text-gray-900 uppercase"> Stage Features</h2>
+                    <img src="pictures/virtualstage/3d-divider.png" alt="divider" class="h-18 w-96">
+                </div>
+                <div class="md:grid-cols-2 md:gap-12 grid items-center justify-center w-full h-full grid-cols-1 gap-8">
+                    <!-- 1 -->
+                    <div
+                        class="md:order-none flex flex-col items-center justify-center order-first w-full h-full space-y-4">
+                        <img src="pictures/virtualstage/star.png" alt="wedding" class="md:h-96 rounded-2xl w-full h-48">
+                        <button class="w-56 h-12 bg-gray-900 rounded-full">
+                            <h2 class="text-xl font-bold text-white uppercase"> Lorem ipsum</h2>
+                        </button>
+                    </div>
+
+                    <div
+                        class="md:order-none flex flex-col items-center justify-center order-2 p-8 space-y-8 border-2 border-black rounded-lg">
+                        <div class="space-y-4 text-center">
+                            <p class="text-xl text-justify text-gray-500">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                sed do eiusmod tempor incididunt ut labore et dolore
+                                magna aliqua.
+                            </p>
+                            <p class="text-xl text-justify text-gray-500">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                sed do eiusmod tempor incididunt ut labore et dolore
+                                magna aliqua.
+                            </p>
+                            <p class="text-xl text-justify text-gray-500">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                sed do eiusmod tempor incididunt ut labore et dolore
+                                magna aliqua.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- 2 -->
+                    <div
+                        class="md:order-none flex flex-col items-center justify-center order-4 p-8 space-y-8 bg-gray-900 rounded-lg">
+                        <div class="space-y-4 text-xl text-justify text-white">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                sed do eiusmod tempor incididunt ut labore et dolore
+                                magna aliqua.
+                            </p>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                sed do eiusmod tempor incididunt ut labore et dolore
+                                magna aliqua.
+                            </p>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                sed do eiusmod tempor incididunt ut labore et dolore
+                                magna aliqua.
+                            </p>
+                        </div>
+                    </div>
+                    <div
+                        class="md:order-none flex flex-col items-center justify-center order-3 w-full h-full space-y-4">
+                        <img src="pictures/virtualstage/circle.png" alt="wedding"
+                            class="md:h-96 rounded-2xl w-full h-48">
+                        <button class="w-56 h-12 bg-gray-900 rounded-full">
+                            <h2 class="text-xl font-bold text-white uppercase"> Lorem ipsum</h2>
+                        </button>
+                    </div>
+
+                    <!-- 3 -->
+                    <div
+                        class="md:order-none flex flex-col items-center justify-center order-5 w-full h-full space-y-4">
+                        <img src="pictures/virtualstage/parol.png" alt="wedding"
+                            class="md:h-96 rounded-2xl w-full h-48">
+                        <button class="w-56 h-12 bg-gray-900 rounded-full">
+                            <h2 class="text-xl font-bold text-white uppercase"> Lorem ipsum</h2>
+                        </button>
+                    </div>
+
+                    <div
+                        class="md:order-none flex flex-col items-center justify-center order-last p-8 space-y-8 border-2 border-black rounded-lg">
+                        <div class="space-y-4 text-center">
+                            <p class="text-xl text-justify text-gray-500">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                sed do eiusmod tempor incididunt ut labore et dolore
+                                magna aliqua.
+                            </p>
+                            <p class="text-xl text-justify text-gray-500">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                sed do eiusmod tempor incididunt ut labore et dolore
+                                magna aliqua.
+                            </p>
+                            <p class="text-xl text-justify text-gray-500">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                sed do eiusmod tempor incididunt ut labore et dolore
+                                magna aliqua.
+                            </p>
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </section>
+
+            <section class="md:px-32 md:bg-cover h-1/2 flex flex-col items-center justify-center w-screen px-6 py-8 space-y-12 text-center text-white bg-center"
+                style="background-image: url('pictures/virtualstage/make-virtual.png')">
+                <div class="md:text-5xl md:py-32 py-12 text-2xl font-extrabold text-center uppercase">
+                    <h2> MAKE YOUR VIRTUAL EVENT</h2>
+                    <h2> Stand out.</h2>
+                </div>
+            </section>
+
+            <section class="md:px-64 flex flex-col items-center justify-center w-full h-full px-8 py-16 space-y-12 text-gray-900">
+                <div class="md:grid-cols-2 md:gap-12 grid items-center justify-center w-full h-full grid-cols-1">
+                    <!-- Why Choose Us-->
+                    <div class="md:order-none flex flex-col items-start justify-start order-last py-12 space-y-8">
+                        <div class="md:text-justify space-y-4 text-center">
+                            <h2 class="md:text-4xl text-xl font-bold uppercase">Why Choose Us </h2>
+                            <p class=" text-xl">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                sed do eiusmod tempor incididunt ut labore et dolore
+                                magna aliqua.
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                sed do eiusmod tempor incididunt ut labore et dolore
+                                magna aliqua.
+                            </p>
+                            <button class="rounded-xl bg-gradient-to-r from-blue-600 to-blue-400 w-56 h-12">
+                                <h2 class="text-xl font-bold text-white uppercase">See Works</h2>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="md:order-none flex items-center justify-center order-first w-full h-full">
+                        <img src="pictures/virtualstage/choose1.png" alt="live" alt="live" class="md:h-72 w-72 h-48">
+                    </div>
+                </div>
+            </section>
+
+            <footer class="md:px-32 flex items-center justify-center py-4 bg-gray-600">
+                <div class="flex flex-col items-center justify-center space-y-4">
+                    <div>
+                        <img src="pictures/logo-1.png" alt="logo" class="h-14 w-auto">
+                    </div>
+                    <div
+                        class="md:flex-row md:space-x-8 flex flex-col items-center justify-center space-x-0 text-xl font-semibold text-white">
+                        <a href="#" class="hover:underline hover:text-gray-700">
+                            <span class="uppercase">Home</span>
+                        </a>
+                        <a href="#" class="hover:underline hover:text-gray-700">
+                            <span class="uppercase">our Services</span>
+                        </a>
+                        <a href="#" class="hover:underline hover:text-gray-700">
+                            <span class="uppercase"> Our Portfolio </span>
+                        </a>
+                        <a href="#" class="hover:underline hover:text-gray-700">
+                            <span class="uppercase"> let's Connect </span>
+                        </a>
+                        <a href="#" class="hover:underline hover:text-gray-700">
+                            <span class="uppercase">Your Project</span>
+                        </a>
+                    </div>
+                    <div class="flex flex-row items-center justify-center space-x-8 text-lg">
+                        <img src="pictures/footer-facebook.png" alt="fb" class="w-auto h-10">
+                        <img src="pictures/footer-youtube.png" alt="yt" class="w-auto h-10">
+                        <img src="pictures/footer-vimeo.png" alt="vm" class="w-auto h-10">
+                        <img src="pictures/footer-benance.png" alt="be" class="w-auto h-10">
+                    </div>
+                    <div class="flex flex-col items-center justify-center space-y-2">
+                        <h2 class="text-md"> Make safe payment with</h2>
+                        <img src="pictures/footer-paypal.png" alt="paypal" class="w-auto h-12">
+                    </div>
+                </div>
+            </footer>
+
+        </div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin=" anonymous "></script>
+        <script src="./script.js "></script>
+    </body>
+
+
+</html>

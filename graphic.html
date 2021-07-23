@@ -1,0 +1,467 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+    crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.0.4/tailwind.min.css">
+</head>
+<body>
+    <div>
+        <nav class="md:px-32 md:justify-between z-50 flex flex-row items-center justify-center w-screen h-24 px-6 bg-white">
+            <div class="flex items-center justify-start">
+                <a href="#">
+                    <img src="pictures/logo-nav.png" class="w-44">
+                </a>
+            </div>
+            <div class="md:flex-wrap flex flex-row items-center justify-end space-x-8">
+                <div class="md:block relative items-center hidden space-x-8">
+                    <button onclick="toggleElement('video')"
+                        class="group hover:text-gray-900 focus:outline-none inline-flex items-center text-base font-medium text-gray-500 bg-white rounded-md"
+                        aria-expanded="false">
+                        <span>Video Editing Services</span>
+
+                        <svg class="group-hover:text-gray-500 w-5 h-5 ml-2 text-gray-400"
+                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                            aria-hidden="true">
+                            <path fill-rule="evenodd"
+                                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                clip-rule="evenodd" />
+                        </svg>
+                    </button>
+                    <div class="left-1/2 sm:px-0 absolute z-10 hidden w-screen max-w-md px-2 mt-3 transform -translate-x-1/2"
+                        id="video">
+                        <div class="ring-1 ring-black ring-opacity-5 overflow-hidden rounded-lg shadow-lg">
+                            <div class="sm:gap-8 sm:p-8 relative grid gap-6 px-5 py-6 uppercase bg-white">
+                                <a href="#" class="hover:bg-gray-50 flex items-start p-3 -m-3 rounded-lg">
+                                    <p class="text-base font-medium text-gray-900">
+                                        wedding video editng
+                                    </p>
+                                </a>
+                                <a href="#" class="hover:bg-gray-50 flex items-start p-3 -m-3 rounded-lg">
+                                    <p class="text-base font-medium text-gray-900">
+                                        corporate video editing
+                                    </p>
+                                </a>
+                                <a href="#" class="hover:bg-gray-50 flex items-start p-3 -m-3 rounded-lg">
+                                    <p class="text-base font-medium text-gray-900">
+                                        gopro video editing
+                                    </p>
+                                </a>
+                                <a href="#" class="hover:bg-gray-50 flex items-start p-3 -m-3 rounded-lg">
+                                    <p class="text-base font-medium text-gray-900">
+                                        drone video editing
+                                    </p>
+                                </a>
+                                <a href="#" class="hover:bg-gray-50 flex items-start p-3 -m-3 rounded-lg">
+                                    <p class="text-base font-medium text-gray-900">
+                                        family video editing
+                                    </p>
+                                </a>
+                                <a href="#" class="hover:bg-gray-50 flex items-start p-3 -m-3 rounded-lg">
+                                    <p class="text-base font-medium text-gray-900">
+                                        holiday video editing
+                                    </p>
+                                </a>
+                                <a href="#" class="hover:bg-gray-50 flex items-start p-3 -m-3 rounded-lg">
+                                    <p class="text-base font-medium text-gray-900">
+                                        picture to video editing
+                                    </p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="md:block relative items-center hidden space-x-8">
+                    <button onclick="toggleElement('work')"
+                        class="group hover:text-gray-900 focus:outline-none inline-flex items-center text-base font-medium text-gray-500 bg-white rounded-md"
+                        aria-expanded="false">
+                        <span>Our Work</span>
+
+                        <svg class="group-hover:text-gray-500 w-5 h-5 ml-2 text-gray-400"
+                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                            aria-hidden="true">
+                            <path fill-rule="evenodd"
+                                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                clip-rule="evenodd" />
+                        </svg>
+                    </button>
+                    <div class="left-1/2 sm:px-0 absolute z-10 hidden w-screen max-w-md px-2 mt-3 transform -translate-x-1/2"
+                        id="work">
+                        <div class="ring-1 ring-black ring-opacity-5 overflow-hidden rounded-lg shadow-lg">
+                            <div class="sm:gap-8 sm:p-8 relative grid gap-6 px-5 py-6 uppercase bg-white">
+                                <a href="#" class="hover:bg-gray-50 flex items-start p-3 -m-3 rounded-lg">
+                                    <p class="text-md font-semibold text-gray-900">
+                                        Wedding Portfolio
+                                    </p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="md:block relative items-center hidden space-x-8">
+                    <button onclick="toggleElement('pricing')"
+                        class="group hover:text-gray-900 focus:outline-none inline-flex items-center text-base font-medium text-gray-500 bg-white rounded-md"
+                        aria-expanded="false">
+                        <span>View Pricing</span>
+
+                        <svg class="group-hover:text-gray-500 w-5 h-5 ml-2 text-gray-400"
+                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                            aria-hidden="true">
+                            <path fill-rule="evenodd"
+                                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                clip-rule="evenodd" />
+                        </svg>
+                    </button>
+                    <div class="left-1/2 sm:px-0 absolute z-10 hidden w-screen max-w-md px-2 mt-3 transform -translate-x-1/2"
+                        id="pricing">
+                        <div class="ring-1 ring-black ring-opacity-5 overflow-hidden rounded-lg shadow-lg">
+                            <div class="sm:gap-8 sm:p-8 relative grid gap-6 px-5 py-6 uppercase bg-white">
+                                <a href="#" class="hover:bg-gray-50 flex items-start p-3 -m-3 rounded-lg">
+                                    <p class="text-md font-semibold text-gray-900">
+                                        Wedding Portfolio
+                                    </p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="md:block relative items-center hidden space-x-8">
+                    <button onclick="toggleElement('account')"
+                        class="group hover:text-gray-900 focus:outline-none inline-flex items-center text-base font-medium text-gray-500 bg-white rounded-md"
+                        aria-expanded="false">
+                        <span>My Account</span>
+
+                        <svg class="group-hover:text-gray-500 w-5 h-5 ml-2 text-gray-400"
+                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                            aria-hidden="true">
+                            <path fill-rule="evenodd"
+                                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                clip-rule="evenodd" />
+                        </svg>
+                    </button>
+                    <div class="left-1/2 sm:px-0 absolute z-10 hidden w-screen max-w-md px-2 mt-3 transform -translate-x-1/2"
+                        id="account">
+                        <div class="ring-1 ring-black ring-opacity-5 overflow-hidden rounded-lg shadow-lg">
+                            <div class="sm:gap-8 sm:p-8 relative grid gap-6 px-5 py-6 uppercase bg-white">
+                                <a href="#" class="hover:bg-gray-50 flex items-start p-3 -m-3 rounded-lg">
+                                    <p class="text-md font-semibold text-gray-900">
+                                        Wedding Portfolio
+                                    </p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="md:block relative items-center hidden space-x-8">
+                    <button onclick="toggleElement('shop')"
+                        class="group hover:text-gray-900 focus:outline-none inline-flex items-center text-base font-medium text-gray-500 bg-white rounded-md"
+                        aria-expanded="false">
+                        <span>Shop</span>
+
+                        <svg class="group-hover:text-gray-500 w-5 h-5 ml-2 text-gray-400"
+                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                            aria-hidden="true">
+                            <path fill-rule="evenodd"
+                                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                clip-rule="evenodd" />
+                        </svg>
+                    </button>
+                    <div class="left-1/2 sm:px-0 absolute z-10 hidden w-screen max-w-md px-2 mt-3 transform -translate-x-1/2"
+                        id="shop">
+                        <div class="ring-1 ring-black ring-opacity-5 overflow-hidden rounded-lg shadow-lg">
+                            <div class="sm:gap-8 sm:p-8 relative grid gap-6 px-5 py-6 uppercase bg-white">
+                                <a href="#" class="hover:bg-gray-50 flex items-start p-3 -m-3 rounded-lg">
+                                    <p class="text-md font-semibold text-gray-900">
+                                        Wedding Portfolio
+                                    </p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="md:block relative items-center hidden space-x-8">
+                    <button onclick="toggleElement('contact')"
+                        class="group hover:text-gray-900 focus:outline-none inline-flex items-center text-base font-medium text-gray-500 bg-white rounded-md"
+                        aria-expanded="false">
+                        <span>Contact</span>
+
+                        <svg class="group-hover:text-gray-500 w-5 h-5 ml-2 text-gray-400"
+                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                            aria-hidden="true">
+                            <path fill-rule="evenodd"
+                                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                clip-rule="evenodd" />
+                        </svg>
+                    </button>
+                    <div class="left-1/2 sm:px-0 absolute z-10 hidden w-screen max-w-md px-2 mt-3 transform -translate-x-1/2"
+                        id="contact">
+                        <div class="ring-1 ring-black ring-opacity-5 overflow-hidden rounded-lg shadow-lg">
+                            <div class="sm:gap-8 sm:p-8 relative grid gap-6 px-5 py-6 uppercase bg-white">
+                                <a href="#" class="hover:bg-gray-50 flex items-start p-3 -m-3 rounded-lg">
+                                    <p class="text-md font-semibold text-gray-900">
+                                        Wedding Portfolio
+                                    </p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="md:block relative items-center hidden space-x-8">
+                    <button onclick="toggleElement('blog')"
+                        class="group hover:text-gray-900 focus:outline-none inline-flex items-center text-base font-medium text-gray-500 bg-white rounded-md"
+                        aria-expanded="false">
+                        <span>Blog</span>
+
+                        <svg class="group-hover:text-gray-500 w-5 h-5 ml-2 text-gray-400"
+                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                            aria-hidden="true">
+                            <path fill-rule="evenodd"
+                                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                clip-rule="evenodd" />
+                        </svg>
+                    </button>
+                    <div class="left-1/2 sm:px-0 absolute z-10 hidden w-screen max-w-md px-2 mt-3 transform -translate-x-1/2"
+                        id="blog">
+                        <div class="ring-1 ring-black ring-opacity-5 overflow-hidden rounded-lg shadow-lg">
+                            <div class="sm:gap-8 sm:p-8 relative grid gap-6 px-5 py-6 uppercase bg-white">
+                                <a href="#" class="hover:bg-gray-50 flex items-start p-3 -m-3 rounded-lg">
+                                    <p class="text-md font-semibold text-gray-900">
+                                        Wedding Portfolio
+                                    </p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:hidden block">
+                    <button class="navbtn p-3 ml-auto" data-target="#navigation"
+                        onClick="toggleElement('navigation')">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+                                d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </nav>
+        <div id="navigation" class="absolute z-10 hidden w-screen p-6 bg-white">
+            <div class="flex flex-col">
+                <a href="landing.html"
+                    class="md:w-auto hover:underline hover:text-gray-700 px-3 py-2 text-gray-500">
+                    <span>Home</span>
+                </a>
+                <a href="#" class="md:w-auto hover:underline hover:text-gray-700 px-3 py-2 text-gray-500">
+                    <span class="">Video Editing Services</span>
+                </a>
+                <a href="#" class="md:w-auto hover:underline hover:text-gray-700 px-3 py-2 text-gray-500">
+                    <span class="">Our Work</span>
+                </a>
+                <a href="#" class="md:w-auto hover:underline hover:text-gray-700 px-3 py-2 text-gray-500">
+                    <span class="">View Pricing</span>
+                </a>
+                <a href="#" class="md:w-auto hover:underline hover:text-gray-700 px-3 py-2 text-gray-500">
+                    <span class="">My Account</span>
+                </a>
+                <a href="#" class="md:w-auto hover:underline hover:text-gray-700 px-3 py-2 text-gray-500">
+                    <span class="">Shop</span>
+                </a>
+                <a href="#" class="md:w-auto hover:underline hover:text-gray-700 px-3 py-2 text-gray-500">
+                    <span class="">Contact</span>
+                </a>
+                <a href="#" class="md:w-auto hover:underline hover:text-gray-700 px-3 py-2 text-gray-500">
+                    <span class="">Blog</span>
+                </a>
+            </div>
+        </div>
+        <section class="flex flex-col w-screen h-screen bg-fixed bg-cover" style="background-image: url('pictures/graphics/header.png');">
+            <div class="md:px-60 items-center justify-start py-24">
+                <h1 class="md:text-6xl text-3xl font-bold uppercase"><span class="text-blue-500">GR</span><span class="text-white">AP</span><span class="text-yellow-300">HI</span><span class="text-white">CS</span> <span class="text-pink-500">DE</span><span class="text-white">S</span>  <span class="text-green-300">GN</span></h1>
+            </div>
+            <div class="flex flex-wrap justify-end">
+                <p class="p-2 text-xl text-gray-500">
+                    LLorem ipsum dolor sit amet, consectetur adipiscing elit. <br> Proin ut convallis nunc, vel congue enim. 
+            </div>
+        </section>
+        <section style="background-image: url('pictures/graphics/bg-illustration.png');">
+            <div>
+                <h1 class="px-20 text-3xl font-bold text-gray-900 uppercase">graphic illustration</h1>
+            </div>
+            <div class="md:flex-col flex flex-row">
+                <div class="md:flex-row flex flex-col items-center justify-start px-20">
+                    <div>
+                        <img src="pictures/graphics/illustration.png" class="w-12/12 mt-28" alt="">
+                    </div>
+                    <div class="w-11/12 h-auto text-white bg-green-500">
+                        <p class="px-20 pt-10">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                            Cras vel turpis consectetur, tincidunt diam ac, tempus ipsum. Maecenas ornare, 
+                            elit sit amet pretium volutpat, sem est fringilla ligula, a ornare tortor elit vel magna. 
+                        </p>
+                        <p class="px-20 pt-10">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                            Cras vel turpis consectetur, tincidunt diam ac, tempus ipsum. Maecenas ornare, 
+                            elit sit amet pretium volutpat, sem est fringilla ligula, a ornare tortor elit vel magna. 
+                        </p>
+                        <p class="px-20 py-10">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                            Cras vel turpis consectetur, tincidunt diam ac, tempus ipsum. Maecenas ornare, 
+                            elit sit amet pretium volutpat, sem est fringilla ligula, a ornare tortor elit vel magna. 
+                        </p>
+                    </div>
+                </div>
+        </div>
+        </section>
+        <section style="background-image: url('pictures/graphics/bg-animation.png');">
+            <div class="md:flex-col flex flex-row">
+                <div class="flex items-center justify-start px-20">
+                    <div class="w-11/12 h-auto text-white bg-blue-900">
+                        <p class="px-20 pt-10">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                            Cras vel turpis consectetur, tincidunt diam ac, tempus ipsum. Maecenas ornare, 
+                            elit sit amet pretium volutpat, sem est fringilla ligula, a ornare tortor elit vel magna. 
+                        </p>
+                        <p class="px-20 pt-10">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                            Cras vel turpis consectetur, tincidunt diam ac, tempus ipsum. Maecenas ornare, 
+                            elit sit amet pretium volutpat, sem est fringilla ligula, a ornare tortor elit vel magna. 
+                        </p>
+                        <p class="px-20 py-10">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                            Cras vel turpis consectetur, tincidunt diam ac, tempus ipsum. Maecenas ornare, 
+                            elit sit amet pretium volutpat, sem est fringilla ligula, a ornare tortor elit vel magna. 
+                        </p>
+                    </div>
+                    <div class="md:flex-row">
+                        <h1 class="px-20 text-3xl font-bold text-gray-900 uppercase">animation design</h1>
+                        <img src="pictures/graphics/animation2.png" class="w-12/12 pt-28" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section style="background-image: url('pictures/graphics/bg-pricing.png');">
+            <div>
+                <h1 class="px-20 text-3xl font-bold text-gray-900 uppercase">our pricing</h1>
+            </div>
+            <div class="md:flex-col flex flex-row">
+                <div class="md:flex-row flex flex-col items-center justify-start px-20">
+                    <div>
+                        <img src="pictures/graphics/pricing1.png" class="w-12/12 mt-28" alt="">
+                    </div>
+                    <div class="w-11/12 h-auto text-white bg-green-500">
+                        <p class="px-20 pt-10">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                            Cras vel turpis consectetur, tincidunt diam ac, tempus ipsum. Maecenas ornare, 
+                            elit sit amet pretium volutpat, sem est fringilla ligula, a ornare tortor elit vel magna. 
+                        </p>
+                        <p class="px-20 pt-10">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                            Cras vel turpis consectetur, tincidunt diam ac, tempus ipsum. Maecenas ornare, 
+                            elit sit amet pretium volutpat, sem est fringilla ligula, a ornare tortor elit vel magna. 
+                        </p>
+                        <p class="px-20 py-10">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                            Cras vel turpis consectetur, tincidunt diam ac, tempus ipsum. Maecenas ornare, 
+                            elit sit amet pretium volutpat, sem est fringilla ligula, a ornare tortor elit vel magna. 
+                        </p>
+                    </div>
+                </div>
+        </div>
+        </section>
+        <section class="md:px-32 flex flex-col w-full h-auto px-6">
+            <div class="flex justify-end">
+                <h1 class="md:text-3xl text-2xl font-bold uppercase"><span class="text-blue-600">how</span> <span class="text-yellow-500">it</span> <span class="text-red-600">works</span></h1>
+            </div>
+            <div class="flex flex-row justify-start w-full">
+                <div>
+                    <img src="pictures/graphics/line.png" class="h-80" alt="">
+                </div>
+                <div class="md:grid-cols-2 grid w-1/2 grid-cols-1 gap-2">
+                    <div class="px-5">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                        Cras vel turpis consectetur, tincidunt diam ac, tempus ipsum. 
+                    </div>
+                    <div class="px-5">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                        Cras vel turpis consectetur, tincidunt diam ac, tempus ipsum.
+                    </div>
+                    <div class="px-5">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                        Cras vel turpis consectetur, tincidunt diam ac, tempus ipsum. 
+                    </div>
+                    <div class="px-5">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                        Cras vel turpis consectetur, tincidunt diam ac, tempus ipsum.
+                    </div>
+                </div>
+            </div>
+            <div class="flex justify-start">
+                <h1 class="md:text-3xl text-2xl font-bold text-left uppercase"><span class="text-indigo-600">why</span> <span class="text-yellow-500">choose</span> <span class="text-pink-600">us?</span></h1>
+            </div>
+            <div class="flex flex-row justify-end w-full">
+                <div class="md:grid-cols-2 grid w-1/2 grid-cols-2 gap-2">
+                    <div class="px-5">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                        Cras vel turpis consectetur, tincidunt diam ac, tempus ipsum. 
+                    </div>
+                    <div class="px-5">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                        Cras vel turpis consectetur, tincidunt diam ac, tempus ipsum.
+                    </div>
+                    <div class="px-5">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                        Cras vel turpis consectetur, tincidunt diam ac, tempus ipsum. 
+                    </div>
+                    <div class="px-5">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                        Cras vel turpis consectetur, tincidunt diam ac, tempus ipsum.
+                    </div>
+                </div>
+                <div>
+                    <img src="pictures/graphics/line.png" class="h-80" alt="">
+                </div>
+            </div>
+        </section>
+        <footer class="md:px-32 flex items-center justify-center py-4 bg-center"
+        style="background-image: url('pictures/graphics/footer.png')">
+            <div class="flex flex-col items-center justify-center space-y-4">
+                <div>
+                    <img src="pictures/logo-1.png" alt="logo" class="h-14 w-auto">
+                </div>
+                <div
+                    class="md:flex-row md:space-x-8 flex flex-col items-center justify-center space-x-0 text-xl font-semibold text-white">
+                    <a href="#" class="hover:underline hover:text-gray-700">
+                        <span class="uppercase">Home</span>
+                    </a>
+                    <a href="#" class="hover:underline hover:text-gray-700">
+                        <span class="uppercase">our Services</span>
+                    </a>
+                    <a href="#" class="hover:underline hover:text-gray-700">
+                        <span class="uppercase"> Our Portfolio </span>
+                    </a>
+                    <a href="#" class="hover:underline hover:text-gray-700">
+                        <span class="uppercase"> let's Connect </span>
+                    </a>
+                    <a href="#" class="hover:underline hover:text-gray-700">
+                        <span class="uppercase">Your Project</span>
+                    </a>
+                </div>
+                <div class="flex flex-row items-center justify-center space-x-8 text-lg">
+                    <img src="pictures/footer-facebook.png" alt="fb" class="w-auto h-10">
+                    <img src="pictures/footer-youtube.png" alt="yt" class="w-auto h-10">
+                    <img src="pictures/footer-vimeo.png" alt="vm" class="w-auto h-10">
+                    <img src="pictures/footer-benance.png" alt="be" class="w-auto h-10">
+                </div>
+                <div class="flex flex-col items-center justify-center space-y-2">
+                    <h2 class="text-md"> Make safe payment with</h2>
+                    <img src="pictures/footer-paypal.png" alt="paypal" class="w-auto h-12">
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+    
+</body>
+</html>

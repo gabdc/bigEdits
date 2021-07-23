@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>HOME</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+            integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+            crossorigin="anonymous" />
+
+        <!-- Styles -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.0.4/tailwind.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+            integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+            crossorigin="anonymous" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+
+    </head>
+
+    <body>
+        <section>
+            <nav class="md:px-24 md:justify-between z-50 flex flex-row items-center justify-center w-screen h-24 px-6 bg-white">
+                <div class="flex items-center justify-start">
+                    <a href="#">
+                        <img src="pictures/logo-nav.png" class="w-44">
+                    </a>
+                </div>
+
+                <div class="md:flex-wrap flex flex-row items-center justify-end space-x-8">
+                    <div class="md:block relative items-center hidden space-x-8">
+                        <a href="index.html" class="">
+                            <button
+                                class="group hover:text-gray-900 focus:outline-none inline-flex items-center text-base font-medium text-gray-500 bg-white rounded-md"
+                                aria-expanded="false">
+                                <span class="uppercase">Home</span>
+                                <i class="fas fa-caret-down px-2" style="color:#FF1493;"></i>
+                            </button>
+                        </a>
+                    </div>
+                    <div class="md:block relative items-center hidden space-x-8">
+                        <button onclick="toggleElement('video')"
+                            class="group hover:text-gray-900 focus:outline-none inline-flex items-center text-base font-medium text-gray-500 bg-white rounded-md"
+                            aria-expanded="false">
+                            <span class="uppercase">Our Services</span>
+                            <i class="fas fa-caret-down px-2" style="color:#FF1493;"></i>
+                        </button>
+                        <div class="left-1/2 sm:px-0 w-72 absolute z-10 hidden max-w-md px-2 mt-3 transform -translate-x-1/2"
+                            id="video">
+                            <div class="ring-1 ring-black ring-opacity-5 rounded-xl overflow-hidden">
+                                <div class="md:p-8 relative grid gap-6 px-5 py-6 uppercase bg-white">
+                                    <a href="wedding.html"
+                                        class="hover:bg-gray-50 flex items-center p-3 -m-3 rounded-lg">
+                                        <p class="text-md font-semibold text-gray-900">
+                                            wedding video editng
+                                        </p>
+                                    </a>
+                                    <a href="corporate.html"
+                                        class="hover:bg-gray-50 flex items-center p-3 -m-3 rounded-lg">
+                                        <p class="text-md font-semibold text-gray-900">
+                                            corporate video editing
+                                        </p>
+                                    </a>
+                                    <a href="family.html"
+                                        class="hover:bg-gray-50 flex items-center p-3 -m-3 rounded-lg">
+                                        <p class="text-md font-semibold text-gray-900">
+                                            family video editing
+                                        </p>
+                                    </a>
+                                    <a href="youtube.html"
+                                        class="hover:bg-gray-50 flex items-center p-3 -m-3 rounded-lg">
+                                        <p class="text-md font-semibold text-gray-900">
+                                            youtube content video editing
+                                        </p>
+                                    </a>
+                                    <a href="logo-animation.html"
+                                        class="hover:bg-gray-50 flex items-center p-3 -m-3 rounded-lg">
+                                        <p class="text-md font-semibold text-gray-900">
+                                            logo animation
+                                        </p>
+                                    </a>
+                                    <a href="virtualStage.html"
+                                        class="hover:bg-gray-50 flex items-center p-3 -m-3 rounded-lg">
+                                        <p class="text-md font-semibold text-gray-900">
+                                            virtual stage
+                                        </p>
+                                    </a>
+                                    <a href="graphic.html"
+                                        class="hover:bg-gray-50 flex items-center p-3 -m-3 rounded-lg">
+                                        <p class="text-md font-semibold text-gray-900">
+                                            graphic design
+                                        </p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="md:block relative items-center hidden space-x-8">
+                        <button onclick="toggleElement('portfolio')"
+                            class="group hover:text-gray-900 focus:outline-none inline-flex items-center text-base font-medium text-gray-500 bg-white rounded-md"
+                            aria-expanded="false">
+                            <span class="uppercase">Our Portfolio</span>
+                            <i class="fas fa-caret-down px-2" style="color:#FF1493;"></i>
+                        </button>
+                        <div class="left-1/2 sm:px-0 w-72 absolute z-10 hidden max-w-md px-2 mt-3 transform -translate-x-1/2"
+                            id="portfolio">
+                            <div class="ring-1 ring-black ring-opacity-5 rounded-xl overflow-hidden">
+                                <div class="md:p-6 relative grid gap-6 py-2 uppercase bg-white">
+                                    <a href="#"
+                                        class="hover:bg-gray-50 flex items-center p-3 -m-3 rounded-lg">
+                                        <p class="text-md font-semibold text-gray-900">
+                                            Our work
+                                        </p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="md:block relative items-center hidden space-x-8">
+                        <button onclick="toggleElement('connect')"
+                            class="group hover:text-gray-900 focus:outline-none inline-flex items-center text-base font-medium text-gray-500 bg-white rounded-md"
+                            aria-expanded="false">
+                            <span class="uppercase">Let's Connect</span>
+                            <i class="fas fa-caret-down px-2" style="color:#FF1493;"></i>
+                        </button>
+                        <div class="left-1/2 sm:px-0 w-72 absolute z-10 hidden max-w-md px-2 mt-3 transform -translate-x-1/2"
+                            id="connect">
+                            <div class="ring-1 ring-black ring-opacity-5 rounded-xl overflow-hidden">
+                                <div class="md:p-6 relative grid gap-6 py-2 uppercase bg-white">
+                                    <a href="#"
+                                        class="hover:bg-gray-50 flex items-center p-3 -m-3 rounded-lg">
+                                        <p class="text-md font-semibold text-gray-900">
+                                            FAQS
+                                        </p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="md:block relative items-center hidden space-x-8">
+                        <button onclick="toggleElement('account')"
+                            class="group hover:text-gray-900 focus:outline-none inline-flex items-center text-base font-medium text-gray-500 bg-white rounded-md"
+                            aria-expanded="false">
+                            <span class="uppercase">My Account</span>
+                            <i class="fas fa-caret-down px-2" style="color:#FF1493;"></i>
+                        </button>
+                        <div class="left-1/2 sm:px-0 w-72 absolute z-10 hidden max-w-md px-2 mt-3 transform -translate-x-1/2"
+                            id="account">
+                            <div class="ring-1 ring-black ring-opacity-5 rounded-xl overflow-hidden">
+                                <div class="md:p-8 relative grid gap-6 px-5 py-6 uppercase bg-white">
+                                    <a href="register1.html"
+                                        class="hover:bg-gray-50 flex items-center p-3 -m-3 rounded-lg">
+                                        <p class="text-md font-semibold text-gray-900">
+                                            Register
+                                        </p>
+                                    </a>
+                                    <a href="login1.html"
+                                        class="hover:bg-gray-50 flex items-center p-3 -m-3 rounded-lg">
+                                        <p class="text-md font-semibold text-gray-900">
+                                            Login
+                                        </p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="md:hidden block">
+                        <button class="navbtn p-3 ml-auto" data-target="#navigation"
+                            onClick="toggleElement('navigation')">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+                                    d="M4 6h16M4 12h16M4 18h16" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </nav>
+            <div id="navigation" class="absolute z-10 hidden w-screen p-6 bg-white">
+                <div class="flex flex-col">
+                    <a href="index.html"
+                        class="md:w-auto hover:underline hover:text-gray-700 px-4 py-2 text-gray-500">
+                        <span>Home</span>
+                    </a>
+                    <a href="#" class="md:w-auto hover:underline hover:text-gray-700 px-4 py-2 text-gray-500">
+                        <span class="">Our Services</span>
+                    </a>
+                    <a href="#" class="md:w-auto hover:underline hover:text-gray-700 px-4 py-2 text-gray-500">
+                        <span class="">Our Portfolio</span>
+                    </a>
+                    <a href="#" class="md:w-auto hover:underline hover:text-gray-700 px-4 py-2 text-gray-500">
+                        <span class="">Let's Connect</span>
+                    </a>
+                    <a href="#" class="md:w-auto hover:underline hover:text-gray-700 px-4 py-2 text-gray-500">
+                        <span class="">My Account</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="md:px-64 md:py-16 flex items-center justify-center w-auto h-full bg-cover"
+                style="background-image: url('pictures/bg-carousel.png')">
+                <ul class="lazy w-full py-32">
+                    <li>
+                        <div class="w-full h-full">
+                            <img class="rounded-2xl w-auto h-64" src="pictures/wedding/wedding.jpg">
+                        </div>
+                    </li>
+                    <li>
+                        <div class="w-full h-full">
+                            <img class="rounded-2xl w-auto h-64" src="pictures/vacation.jpg">
+                        </div>
+                    </li>
+                    <li>
+                        <div class="w-full h-full">
+                            <img class="rounded-2xl w-auto h-64" src="pictures/holiday-vacation.jpg">
+                        </div>
+                    </li>
+                    <li>
+                        <div class="w-full h-full">
+                            <img class="rounded-2xl w-auto h-64" src="pictures/christmas.jpg">
+                        </div>
+                    </li>
+                    <li>
+                        <div class="w-full h-full">
+                            <img class="rounded-2xl w-auto h-64" src="pictures/corporate.jpg">
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="md:h-8 w-full h-4 bg-pink-600">
+            </div>
+
+            <div class="md:px-32 md:py-20 flex flex-col items-center justify-center w-screen px-6 py-8 space-y-12 text-center text-gray-900 bg-yellow-500">
+                <h2 class="md:text-5xl p-4 text-2xl font-extrabold text-center uppercase">Big edits company</h2>
+                <p class="text-3xl">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua.
+                </p>
+            </div>
+
+            <div class="md:h-8 w-full h-4 bg-purple-700">
+            </div>
+
+
+            <div class="md:px-64 flex items-center justify-center px-8 py-16">
+                <div class="md:grid-cols-2 md:gap-4 grid items-center justify-center w-full h-full grid-cols-1">
+                    <!-- Wedding -->
+                    <div class="md:h-96 md:order-none flex items-center justify-center order-first w-full h-48 bg-no-repeat bg-cover"
+                        style="background-image: url('pictures/yellowborder.png')">
+                        <img src="pictures/wedding/wedding.jpg" alt="wedding" class="md:h-60 md:m-6 h-28 w-auto">
+                    </div>
+
+                    <div
+                        class="md:order-none flex flex-col items-center justify-center order-2 w-auto py-4 space-y-8 text-center">
+                        <div class="space-y-4">
+                            <h2 class="md:text-4xl text-xl font-bold text-justify text-gray-900 uppercase">Wedding
+                                Video Editing</h2>
+                            <p class="text-xl text-justify text-gray-500">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                sed do eiusmod tempor incididunt ut labore et dolore
+                                magna aliqua.
+                            </p>
+                        </div>
+                        <div class="md:flex-row flex flex-col items-center justify-end w-full">
+                            <button
+                                class="rounded-xl flex items-center justify-center w-48 h-12 bg-green-300 shadow-xl">
+                                <h2 class="text-xl font-semibold text-white uppercase">View More</h2>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Youtube-->
+                    <div
+                        class="md:order-none flex flex-col items-center justify-center order-4 w-auto py-4 space-y-8 text-center">
+                        <div class="space-y-4">
+                            <h2 class="md:text-4xl text-xl font-bold text-justify text-gray-900 uppercase">Youtube
+                                content video editing</h2>
+                            <p class="text-xl text-justify text-gray-500">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                sed do eiusmod tempor incididunt ut labore et dolore
+                                magna aliqua.
+                            </p>
+                        </div>
+                        <div class="md:flex-row flex flex-col items-center justify-start w-full">
+                            <button
+                                class="rounded-xl flex items-center justify-center w-48 h-12 bg-green-300 shadow-xl">
+                                <h2 class="text-xl font-semibold text-white uppercase">View More</h2>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="md:h-96 md:order-none flex items-center justify-center order-3 w-full h-48 bg-no-repeat bg-cover"
+                        style="background-image: url('pictures/purpleborder.png')">
+                        <img src="pictures/" alt="gopro" class="md:h-60 md:m-6 h-28 w-auto">
+                    </div>
+
+                    <!-- Corporate -->
+                    <div class="md:h-96 md:order-none flex items-center justify-center order-5 w-full h-48 bg-no-repeat bg-cover"
+                        style="background-image: url('pictures/pinkborder.png')">
+                        <img src="pictures/corporate.jpg" alt="corporate" class="md:h-60 md:m-6 h-28 w-auto">
+                    </div>
+
+                    <div
+                        class="md:order-none flex flex-col items-center justify-center order-6 w-auto py-4 space-y-8 text-center">
+                        <div class="space-y-4">
+                            <h2 class="md:text-4xl text-xl font-bold text-justify text-gray-900 uppercase">Corporate
+                                Video Editing</h2>
+                            <p class="text-xl text-justify text-gray-500">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                sed do eiusmod tempor incididunt ut labore et dolore
+                                magna aliqua.
+                            </p>
+                        </div>
+                        <div class="md:flex-row flex flex-col items-center justify-end w-full">
+                            <button
+                                class="rounded-xl flex items-center justify-center w-48 h-12 bg-green-300 shadow-xl">
+                                <h2 class="text-xl font-semibold text-white uppercase">View More</h2>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Family -->
+                    <div
+                        class="md:order-none flex flex-col items-center justify-center order-last w-auto py-4 space-y-8 text-center">
+                        <div class="space-y-4">
+                            <h2 class="md:text-4xl text-xl font-bold text-justify text-gray-900 uppercase">
+                                Family Video Editing
+                            </h2>
+                            <p class="text-xl text-justify text-gray-500">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                sed do eiusmod tempor incididunt ut labore et dolore
+                                magna aliqua.
+                            </p>
+                        </div>
+                        <div class="md:flex-row flex flex-col items-center justify-start w-full">
+                            <button
+                                class="rounded-xl flex items-center justify-center w-48 h-12 bg-green-300 shadow-xl">
+                                <h2 class="text-xl font-semibold text-white uppercase">View More</h2>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="md:h-96 md:order-none flex items-center justify-center order-7 w-full h-48 bg-no-repeat bg-cover"
+                        style="background-image: url('pictures/yellowborder.png')">
+                        <img src="pictures/family.jpg" alt="family" class="md:h-60 md:m-6 h-28 w-auto">
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="md:h-8 w-full h-4 bg-purple-700">
+            </div>
+
+
+            <div class="md:px-24 flex flex-col items-center justify-center px-4 py-8 text-center bg-white">
+                <div class="flex items-center justify-center py-2">
+                    <h2 class="md:text-5xl p-4 text-2xl font-extrabold uppercase">
+                        Our addtional services</h2>
+                </div>
+                <div class="flex flex-row items-center justify-center py-2 space-x-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="md:w-80 w-48" viewBox="0 0 263.077 4">
+                        <line id="Line_47" data-name="Line 47" x2="263.077" transform="translate(0 2)" fill="none"
+                            stroke="#707070" stroke-width="4" />
+                    </svg>
+                    <img src="pictures/logo-1.png" alt="logo" class="w-auto h-12">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="md:w-80 w-48" viewBox="0 0 263.077 4">
+                        <line id="Line_47" data-name="Line 47" x2="263.077" transform="translate(0 2)" fill="none"
+                            stroke="#707070" stroke-width="4" />
+                    </svg>
+                </div>
+                <div class="py-2">
+                    <p class="p-2 text-xl text-gray-500">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                        incididunt ut labore et dolore magna liqua.
+                    </p>
+                </div>
+                <div class="md:grid-cols-3 grid w-full h-full grid-cols-1 gap-3 text-xl text-center">
+                    <div class="py-4 space-y-4">
+                        <div class="md:h-80 flex items-center justify-center w-full h-48 bg-no-repeat bg-cover"
+                            style="background-image: url('pictures/purpleborder.png')">
+                            <img src="pictures/drone-water.jpg" alt="drone" class="md:h-48 md:m-6 h-28 w-auto">
+                        </div>
+                        <div>
+                            <div class="text-gray-800">
+                                <h2 class="text-xl font-bold uppercase">Logo Animation</h2>
+                            </div>
+                        </div>
+                        <div>
+                            <p class="px-4 text-base text-center text-gray-500">
+                                Lorem ipsum dolor sit amet consect adipisicing elit. Possimus magnam voluptatum
+                                cupiditate
+                                veritatis in accusamus quisquam.
+                            </p>
+                        </div>
+                        <div class="flex items-center justify-center">
+                            <button
+                                class="rounded-xl flex items-center justify-center w-48 h-12 bg-green-300 shadow-xl">
+                                <h2 class="text-xl font-semibold text-white uppercase">Find More</h2>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="py-4 space-y-4">
+                        <div class="md:h-80 flex items-center justify-center w-full h-48 bg-no-repeat bg-cover"
+                            style="background-image: url('pictures/pinkborder.png')">
+                            <img src="pictures/virtualstage/choose1.png" alt="live" class="md:h-48 md:m-6 h-28 w-auto">
+                        </div>
+                        <div>
+                            <div class="text-gray-800">
+                                <h2 class="text-xl font-bold uppercase"> Virtual Stage</h2>
+                            </div>
+                        </div>
+                        <div>
+                            <p class="px-4 text-base text-center text-gray-500">
+                                Lorem ipsum dolor sit amet consect adipisicing elit. Possimus magnam voluptatum
+                                cupiditate
+                                veritatis in accusamus quisquam.
+                            </p>
+                        </div>
+                        <div class="flex items-center justify-center">
+                            <button
+                                class="rounded-xl flex items-center justify-center w-48 h-12 bg-green-300 shadow-xl">
+                                <h2 class="text-xl font-semibold text-white uppercase">Find More</h2>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="py-4 space-y-4">
+                        <div class="md:h-80 flex items-center justify-center w-full h-48 bg-no-repeat bg-cover"
+                            style="background-image: url('pictures/yellowborder.png')">
+                            <img src="pictures/graphics/animation1.png" alt="animation"
+                                class="md:h-48 md:m-6 h-28 w-auto">
+                        </div>
+                        <div>
+                            <div class="text-gray-800">
+                                <h2 class="text-xl font-bold uppercase"> Graphic Design</h2>
+                            </div>
+                        </div>
+                        <div>
+                            <p class="px-4 text-base text-center text-gray-500">
+                                Lorem ipsum dolor sit amet consect adipisicing elit. Possimus magnam voluptatum
+                                cupiditate
+                                veritatis in accusamus quisquam.
+                            </p>
+                        </div>
+                        <div class="flex items-center justify-center">
+                            <button
+                                class="rounded-xl flex items-center justify-center w-48 h-12 bg-green-300 shadow-xl">
+                                <h2 class="text-xl font-semibold text-white uppercase">Find More</h2>
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="flex flex-col items-center justify-center w-screen py-8 bg-pink-600">
+                <div
+                    class="md:px-32 md:py-16 flex flex-col items-center justify-center px-6 py-6 space-y-12 text-center text-gray-900 bg-yellow-500">
+                    <h2 class="md:text-5xl p-4 text-2xl font-extrabold text-center uppercase">Why choose our
+                        video editing services?</h2>
+                    <p class="text-3xl">
+                        Our dynamic team of creative professionals and video editors operate on a customer-centric
+                        philosophy. We put your point of view front and center. Because no matter the angle or the
+                        composition, we believe that its all about You. Our job is to help you create beautiful stories
+                        that make an impact.
+                    </p>
+                    <p class="text-3xl">
+                        Let’s collaborate. See more of what Big Edits can do for you >>>
+                    </p>
+                </div>
+            </div>
+
+            <section class="md:px-64 flex items-center justify-center px-6 py-16">
+                <div class="md:grid-cols-3 grid items-center justify-center grid-cols-1 gap-4">
+                    <!-- 1 -->
+                    <div class="w-64 h-56 px-4 bg-white border-8 border-gray-900 rounded-sm">
+                        <div class="flex flex-col items-center justify-center w-full h-full space-y-4">
+                            <img src="pictures/handpick.gif" alt="handpick" class="w-auto h-20">
+                            <p class="text-base text-center text-gray-500">
+                                Lorem ipsum dolor sit amet consect adipisicing elit.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- 2 -->
+                    <div class="w-64 h-56 px-4 bg-white border-8 border-gray-900 rounded-sm">
+                        <div class="flex flex-col items-center justify-center w-full h-full space-y-4">
+                            <img src="pictures/timer.gif" alt="timer" class="w-auto h-20">
+                            <p class="text-base text-center text-gray-500">
+                                Lorem ipsum dolor sit amet consect adipisicing elit.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- 3 -->
+                    <div class="w-64 h-56 px-4 bg-white border-8 border-gray-900 rounded-sm">
+                        <div class="flex flex-col items-center justify-center w-full h-full space-y-4">
+                            <img src="pictures/pay-1.gif" alt="timer" class="w-auto h-20">
+                            <p class="text-base text-center text-gray-500">
+                                Lorem ipsum dolor sit amet consect adipisicing elit.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- 4 -->
+                    <div class="w-64 h-56 px-4 bg-white border-8 border-gray-900 rounded-sm">
+                        <div class="flex flex-col items-center justify-center w-full h-full space-y-4">
+                            <img src="pictures/note.gif" alt="timer" class="w-auto h-20">
+                            <p class="text-base text-center text-gray-500">
+                                Lorem ipsum dolor sit amet consect adipisicing elit.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- 5 -->
+                    <div class="w-64 h-56 px-4 bg-white border-8 border-gray-900 rounded-sm">
+                        <div class="flex flex-col items-center justify-center w-full h-full space-y-4">
+                            <img src="pictures/revise.gif" alt="timer" class="w-auto h-20">
+                            <p class="text-base text-center text-gray-500">
+                                Lorem ipsum dolor sit amet consect adipisicing elit.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- 6 -->
+                    <div class="w-64 h-56 px-4 bg-white border-8 border-gray-900 rounded-sm">
+                        <div class="flex flex-col items-center justify-center w-full h-full space-y-4">
+                            <img src="pictures/upload.gif" alt="timer" class="w-auto h-20">
+                            <p class="text-base text-center text-gray-500">
+                                Lorem ipsum dolor sit amet consect adipisicing elit.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- 7 -->
+                    <div class="w-64 h-56 px-4 bg-white border-8 border-gray-900 rounded-sm">
+                        <div class="flex flex-col items-center justify-center w-full h-full space-y-4">
+                            <img src="pictures/secured.gif" alt="timer" class="w-auto h-20">
+                            <p class="text-base text-center text-gray-500">
+                                Lorem ipsum dolor sit amet consect adipisicing elit.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- 8 -->
+                    <div class="w-64 h-56 px-4 bg-white border-8 border-gray-900 rounded-sm">
+                        <div class="flex flex-col items-center justify-center w-full h-full space-y-4">
+                            <img src="pictures/edit-all-types.gif" alt="timer" class="w-auto h-20">
+                            <p class="text-base text-center text-gray-500">
+                                Lorem ipsum dolor sit amet consect adipisicing elit.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- 9 -->
+                    <div class="w-64 h-56 px-4 bg-white border-8 border-gray-900 rounded-sm">
+                        <div class="flex flex-col items-center justify-center w-full h-full space-y-4">
+                            <img src="pictures/music.gif" alt="timer" class="w-w-auto h-20">
+                            <p class="text-base text-center text-gray-500">
+                                Lorem ipsum dolor sit amet consect adipisicing elit.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- 10 -->
+                    <div class="md:col-span-3 flex items-center justify-center">
+                        <div class="w-64 h-56 px-4 bg-white border-8 border-gray-900 rounded-sm">
+                            <div class="flex flex-col items-center justify-center w-full h-full space-y-4">
+                                <img src="pictures/videos.gif" alt="timer" class="w-auto h-20">
+                                <p class="text-base text-center text-gray-500">
+                                    Lorem ipsum dolor sit amet consect adipisicing elit.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class=" flex items-center justify-center w-full py-8 bg-pink-600">
+                <div
+                    class="md:grid-cols-3 md:gap-12 md:px-32 grid items-center justify-center w-full h-full grid-cols-1 gap-4 text-white bg-purple-700">
+                    <div
+                        class="md:justify-start md:items-start flex flex-col items-center justify-center px-4 py-4 space-y-4">
+                        <h2 class="md:text-3xl text-xl font-bold uppercase">Customer requirement</h2>
+                        <p class="text-md md:text-left ">
+                            Lorem ipsum dolor sit amet consect adipisicing elit. Possimus magnam voluptatum
+                            cupiditate veritatis in accusamus quisquam. Lorem ipsum dolor sit amet consect
+                            adipisicing elit.
+                            Possimus magnam voluptatum cupiditate veritatis in accusamus quisquam.
+                        </p>
+                    </div>
+
+                    <div class=" flex items-center justify-center">
+                        <img src="pictures/request.gif " alt="request" class="md:w-64 md:h-64 w-48 h-48">
+                    </div>
+
+                    <div class="md:h-80 h-52 flex items-center justify-center w-full bg-no-repeat bg-cover"
+                        style="background-image: url('pictures/yellowborder.png')">
+                        <img src="pictures/request-pic.jpg" alt="gopro" class="md:h-48 md:m-6 h-28 w-auto">
+                    </div>
+                </div>
+            </section>
+
+            <section class="md:px-64 flex flex-col items-center justify-center px-6 py-8 text-gray-900">
+                <div class="flex items-center justify-center py-2 text-center">
+                    <h2 class="md:text-5xl p-4 text-2xl font-extrabold">
+                        HOW BIG EDIT WORKS FOR YOU</h2>
+                </div>
+                <div class="flex flex-row items-center justify-center py-2 space-x-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="md:w-80 w-48" viewBox="0 0 263.077 4">
+                        <line id="Line_47" data-name="Line 47" x2="263.077" transform="translate(0 2)" fill="none"
+                            stroke="#707070" stroke-width="4" />
+                    </svg>
+                    <img src="pictures/logo-1.png" alt="logo" class="w-auto h-12">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="md:w-80 w-48" viewBox="0 0 263.077 4">
+                        <line id="Line_47" data-name="Line 47" x2="263.077" transform="translate(0 2)" fill="none"
+                            stroke="#707070" stroke-width="4" />
+                    </svg>
+                </div>
+                <div>
+                    <p class="py-8 text-xl">
+                        Lorem ipsum dolor sit amet consect adipisicing elit.
+                    </p>
+                </div>
+
+                <div class="md:grid-cols-3 grid items-center justify-center grid-cols-1 gap-4 py-12">
+                    <!-- 1 -->
+                    <div class="w-64 h-56 px-4 bg-white border-8 border-gray-900 rounded-sm">
+                        <div class="flex flex-col items-center justify-center w-full h-full space-y-4">
+                            <img src="pictures/begin.gif" alt="begin" class="w-20 h-16">
+                            <h2 class="text-3xl font-bold uppercase">Begin</h2>
+                        </div>
+                    </div>
+                    <!-- 2 -->
+                    <div class="w-64 h-56 px-4 bg-white border-8 border-gray-900 rounded-sm">
+                        <div class="flex flex-col items-center justify-center w-full h-full space-y-4">
+                            <img src="pictures/upload-1.gif" alt="upload-1" class="w-20 h-16">
+                            <h2 class="text-3xl font-bold uppercase">Upload</h2>
+                        </div>
+                    </div>
+                    <!-- 3 -->
+                    <div class="w-64 h-56 px-4 bg-white border-8 border-gray-900 rounded-sm">
+                        <div class="flex flex-col items-center justify-center w-full h-full space-y-4">
+                            <img src="pictures/edit.gif" alt="edit" class="w-20 h-16">
+                            <h2 class="text-3xl font-bold uppercase">Editing</h2>
+                        </div>
+                    </div>
+                    <!-- 4 -->
+                    <div class="w-64 h-56 px-4 bg-white border-8 border-gray-900 rounded-sm">
+                        <div class="flex flex-col items-center justify-center w-full h-full space-y-4">
+                            <img src="pictures/review.gif" alt="review" class="w-20 h-16">
+                            <h2 class="text-3xl font-bold uppercase">Review</h2>
+                        </div>
+                    </div>
+                    <!-- 5 -->
+                    <div class="w-64 h-56 px-4 bg-white border-8 border-gray-900 rounded-sm">
+                        <div class="flex flex-col items-center justify-center w-full h-full space-y-4">
+                            <img src="pictures/pay.gif" alt="pay" class="w-20 h-16">
+                            <h2 class="text-3xl font-bold uppercase">pay</h2>
+                        </div>
+                    </div>
+                    <!-- 6 -->
+                    <div class="w-64 h-56 px-4 bg-white border-8 border-gray-900 rounded-sm">
+                        <div class="flex flex-col items-center justify-center w-full h-full space-y-4">
+                            <img src="pictures/download.gif" alt="download" class="w-20 h-16">
+                            <h2 class="text-3xl font-bold uppercase">Download</h2>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="md:h-8 w-full h-4 bg-yellow-500">
+            </section>
+
+            <section class="flex flex-col items-center justify-center w-screen">
+                <div class="flex flex-col items-center justify-center w-full py-8 text-white bg-pink-600">
+                    <div class="tracking-wider text-center text-white">
+                        <h2 class="md:text-5xl p-4 text-xl font-extrabold">
+                            Customer testimonials
+                        </h2>
+                        <p class="md:text-xl text-md p-4">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                            incididunt ut labore et dolore.
+                        </p>
+                    </div>
+                    <div class="md:grid-cols-3 grid items-center justify-center grid-cols-1 gap-8 py-12">
+                        <div class="flex flex-col items-center justify-center space-y-4">
+                            <textarea style="max-width: 100%; resize:none" id="message" name="Message" rows="7"
+                                cols="38" placeholder="Message" class="px-2 shadow-xl"></textarea>
+                            <h2 class="text-xl"> LOREM IPSUM </h2>
+                        </div>
+
+                        <div class="flex flex-col items-center justify-center space-y-4">
+                            <textarea style="max-width: 100%; resize:none" id="message" name="Message" rows="7"
+                                cols="38" placeholder="Message" class="px-2 shadow-xl"></textarea>
+                            <h2 class="text-xl"> LOREM IPSUM </h2>
+                        </div>
+                        <div class="flex flex-col items-center justify-center space-y-4">
+                            <textarea style="max-width: 100%; resize:none" id="message" name="Message" rows="7"
+                                cols="38" placeholder="Message" class="px-2 shadow-xl"></textarea>
+                            <h2 class="text-xl"> LOREM IPSUM </h2>
+                        </div>
+                    </div>
+
+                    <div>
+                        <button class="rounded-xl h-14 flex items-center justify-center w-64 bg-green-300 shadow-xl">
+                            <h2 class="text-2xl font-semibold text-white uppercase">Read reviews</h2>
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+            <footer class="md:px-32 flex items-center justify-center py-4 bg-cover"
+                style="background-image: url('pictures/bg-footer.png')">
+                <div class="flex flex-col items-center justify-center space-y-4">
+                    <div>
+                        <img src="pictures/logo-1.png" alt="logo" class="h-14 w-auto">
+                    </div>
+                    <div
+                        class="md:flex-row md:space-x-8 flex flex-col items-center justify-center space-x-0 text-xl font-semibold">
+                        <a href="#" class="hover:underline hover:text-gray-700 text-gray-900">
+                            <span class="uppercase">Home</span>
+                        </a>
+                        <a href="#" class="hover:underline hover:text-gray-700 text-gray-900">
+                            <span class="uppercase">our Services</span>
+                        </a>
+                        <a href="#" class="hover:underline hover:text-gray-700 text-gray-900">
+                            <span class="uppercase"> Our Portfolio </span>
+                        </a>
+                        <a href="#" class="hover:underline hover:text-gray-700 text-gray-900">
+                            <span class="uppercase"> let's Connect </span>
+                        </a>
+                        <a href="#" class="hover:underline hover:text-gray-700 text-gray-900">
+                            <span class="uppercase">Your Project</span>
+                        </a>
+                    </div>
+                    <div class="flex flex-row items-center justify-center space-x-8 text-lg">
+                        <img src="pictures/footer-facebook.png" alt="fb" class="w-auto h-10">
+                        <img src="pictures/footer-youtube.png" alt="yt" class="w-auto h-10">
+                        <img src="pictures/footer-vimeo.png" alt="vm" class="w-auto h-10">
+                        <img src="pictures/footer-benance.png" alt="be" class="w-auto h-10">
+                    </div>
+                    <div class="flex flex-col items-center justify-center space-y-2">
+                        <h2 class="text-md"> Make safe payment with</h2>
+                        <img src="pictures/footer-paypal.png" alt="paypal" class="w-auto h-12">
+                    </div>
+                </div>
+            </footer>
+        </section>
+
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+            integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js">
+        </script>
+
+        <script>
+            $('.lazy').slick({
+                lazyLoad: 'ondemand',
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                dots: true,
+                infinite: true,
+            });
+        </script>
+
+        <script src="./script.js "></script>
+    </body>
+
+
+</html>

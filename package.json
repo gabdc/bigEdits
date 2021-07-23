@@ -1,0 +1,12 @@
+{
+    "name": "vidcreate",
+    "version": "1.0.0",
+    "description": "",
+    "main": "postcss.config.js",
+    "scripts": {
+        "build": "postcss tailwind.css -o stylesheets/tailwind.css"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC"
+}

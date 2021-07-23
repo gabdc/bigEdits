@@ -1,0 +1,412 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+            integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+            crossorigin="anonymous" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.0.4/tailwind.min.css">
+</head>
+<body>
+    <div class="flex flex-col w-screen h-auto bg-auto bg-cover" style="background-image: url('pictures/ourWorksBG.png');">
+        <nav class="md:px-32 md:justify-between z-50 flex flex-row items-center justify-center w-screen h-24 px-6">
+            <div class="flex items-center justify-start">
+                <a href="#">
+                    <img src="pictures/logo-nav.png" class="w-44">
+                </a>
+            </div>
+            <div class="md:flex-wrap flex flex-row items-center justify-end space-x-8">
+                <div class="md:block relative items-center hidden space-x-8">
+                    <button onclick="toggleElement('video')"
+                        class="group hover:text-gray-900 focus:outline-none inline-flex items-center text-base font-medium text-gray-500 bg-white rounded-md"
+                        aria-expanded="false">
+                        <span>Video Editing Services</span>
+
+                        <svg class="group-hover:text-gray-500 w-5 h-5 ml-2 text-gray-400"
+                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                            aria-hidden="true">
+                            <path fill-rule="evenodd"
+                                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                clip-rule="evenodd" />
+                        </svg>
+                    </button>
+                    <div class="left-1/2 sm:px-0 absolute z-10 hidden w-screen max-w-md px-2 mt-3 transform -translate-x-1/2"
+                        id="video">
+                        <div class="ring-1 ring-black ring-opacity-5 overflow-hidden rounded-lg shadow-lg">
+                            <div class="sm:gap-8 sm:p-8 relative grid gap-6 px-5 py-6 uppercase bg-white">
+                                <a href="#" class="hover:bg-gray-50 flex items-start p-3 -m-3 rounded-lg">
+                                    <p class="text-base font-medium text-gray-900">
+                                        wedding video editng
+                                    </p>
+                                </a>
+                                <a href="#" class="hover:bg-gray-50 flex items-start p-3 -m-3 rounded-lg">
+                                    <p class="text-base font-medium text-gray-900">
+                                        corporate video editing
+                                    </p>
+                                </a>
+                                <a href="#" class="hover:bg-gray-50 flex items-start p-3 -m-3 rounded-lg">
+                                    <p class="text-base font-medium text-gray-900">
+                                        gopro video editing
+                                    </p>
+                                </a>
+                                <a href="#" class="hover:bg-gray-50 flex items-start p-3 -m-3 rounded-lg">
+                                    <p class="text-base font-medium text-gray-900">
+                                        drone video editing
+                                    </p>
+                                </a>
+                                <a href="#" class="hover:bg-gray-50 flex items-start p-3 -m-3 rounded-lg">
+                                    <p class="text-base font-medium text-gray-900">
+                                        family video editing
+                                    </p>
+                                </a>
+                                <a href="#" class="hover:bg-gray-50 flex items-start p-3 -m-3 rounded-lg">
+                                    <p class="text-base font-medium text-gray-900">
+                                        holiday video editing
+                                    </p>
+                                </a>
+                                <a href="#" class="hover:bg-gray-50 flex items-start p-3 -m-3 rounded-lg">
+                                    <p class="text-base font-medium text-gray-900">
+                                        picture to video editing
+                                    </p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="md:block relative items-center hidden space-x-8">
+                    <button onclick="toggleElement('work')"
+                        class="group hover:text-gray-900 focus:outline-none inline-flex items-center text-base font-medium text-gray-500 bg-white rounded-md"
+                        aria-expanded="false">
+                        <span>Our Work</span>
+
+                        <svg class="group-hover:text-gray-500 w-5 h-5 ml-2 text-gray-400"
+                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                            aria-hidden="true">
+                            <path fill-rule="evenodd"
+                                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                clip-rule="evenodd" />
+                        </svg>
+                    </button>
+                    <div class="left-1/2 sm:px-0 absolute z-10 hidden w-screen max-w-md px-2 mt-3 transform -translate-x-1/2"
+                        id="work">
+                        <div class="ring-1 ring-black ring-opacity-5 overflow-hidden rounded-lg shadow-lg">
+                            <div class="sm:gap-8 sm:p-8 relative grid gap-6 px-5 py-6 uppercase bg-white">
+                                <a href="#" class="hover:bg-gray-50 flex items-start p-3 -m-3 rounded-lg">
+                                    <p class="text-md font-semibold text-gray-900">
+                                        Wedding Portfolio
+                                    </p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="md:block relative items-center hidden space-x-8">
+                    <button onclick="toggleElement('pricing')"
+                        class="group hover:text-gray-900 focus:outline-none inline-flex items-center text-base font-medium text-gray-500 bg-white rounded-md"
+                        aria-expanded="false">
+                        <span>View Pricing</span>
+
+                        <svg class="group-hover:text-gray-500 w-5 h-5 ml-2 text-gray-400"
+                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                            aria-hidden="true">
+                            <path fill-rule="evenodd"
+                                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                clip-rule="evenodd" />
+                        </svg>
+                    </button>
+                    <div class="left-1/2 sm:px-0 absolute z-10 hidden w-screen max-w-md px-2 mt-3 transform -translate-x-1/2"
+                        id="pricing">
+                        <div class="ring-1 ring-black ring-opacity-5 overflow-hidden rounded-lg shadow-lg">
+                            <div class="sm:gap-8 sm:p-8 relative grid gap-6 px-5 py-6 uppercase bg-white">
+                                <a href="#" class="hover:bg-gray-50 flex items-start p-3 -m-3 rounded-lg">
+                                    <p class="text-md font-semibold text-gray-900">
+                                        Wedding Portfolio
+                                    </p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="md:block relative items-center hidden space-x-8">
+                    <button onclick="toggleElement('account')"
+                        class="group hover:text-gray-900 focus:outline-none inline-flex items-center text-base font-medium text-gray-500 bg-white rounded-md"
+                        aria-expanded="false">
+                        <span>My Account</span>
+
+                        <svg class="group-hover:text-gray-500 w-5 h-5 ml-2 text-gray-400"
+                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                            aria-hidden="true">
+                            <path fill-rule="evenodd"
+                                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                clip-rule="evenodd" />
+                        </svg>
+                    </button>
+                    <div class="left-1/2 sm:px-0 absolute z-10 hidden w-screen max-w-md px-2 mt-3 transform -translate-x-1/2"
+                        id="account">
+                        <div class="ring-1 ring-black ring-opacity-5 overflow-hidden rounded-lg shadow-lg">
+                            <div class="sm:gap-8 sm:p-8 relative grid gap-6 px-5 py-6 uppercase bg-white">
+                                <a href="#" class="hover:bg-gray-50 flex items-start p-3 -m-3 rounded-lg">
+                                    <p class="text-md font-semibold text-gray-900">
+                                        Wedding Portfolio
+                                    </p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="md:block relative items-center hidden space-x-8">
+                    <button onclick="toggleElement('shop')"
+                        class="group hover:text-gray-900 focus:outline-none inline-flex items-center text-base font-medium text-gray-500 bg-white rounded-md"
+                        aria-expanded="false">
+                        <span>Shop</span>
+
+                        <svg class="group-hover:text-gray-500 w-5 h-5 ml-2 text-gray-400"
+                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                            aria-hidden="true">
+                            <path fill-rule="evenodd"
+                                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                clip-rule="evenodd" />
+                        </svg>
+                    </button>
+                    <div class="left-1/2 sm:px-0 absolute z-10 hidden w-screen max-w-md px-2 mt-3 transform -translate-x-1/2"
+                        id="shop">
+                        <div class="ring-1 ring-black ring-opacity-5 overflow-hidden rounded-lg shadow-lg">
+                            <div class="sm:gap-8 sm:p-8 relative grid gap-6 px-5 py-6 uppercase bg-white">
+                                <a href="#" class="hover:bg-gray-50 flex items-start p-3 -m-3 rounded-lg">
+                                    <p class="text-md font-semibold text-gray-900">
+                                        Wedding Portfolio
+                                    </p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="md:block relative items-center hidden space-x-8">
+                    <button onclick="toggleElement('contact')"
+                        class="group hover:text-gray-900 focus:outline-none inline-flex items-center text-base font-medium text-gray-500 bg-white rounded-md"
+                        aria-expanded="false">
+                        <span>Contact</span>
+
+                        <svg class="group-hover:text-gray-500 w-5 h-5 ml-2 text-gray-400"
+                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                            aria-hidden="true">
+                            <path fill-rule="evenodd"
+                                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                clip-rule="evenodd" />
+                        </svg>
+                    </button>
+                    <div class="left-1/2 sm:px-0 absolute z-10 hidden w-screen max-w-md px-2 mt-3 transform -translate-x-1/2"
+                        id="contact">
+                        <div class="ring-1 ring-black ring-opacity-5 overflow-hidden rounded-lg shadow-lg">
+                            <div class="sm:gap-8 sm:p-8 relative grid gap-6 px-5 py-6 uppercase bg-white">
+                                <a href="#" class="hover:bg-gray-50 flex items-start p-3 -m-3 rounded-lg">
+                                    <p class="text-md font-semibold text-gray-900">
+                                        Wedding Portfolio
+                                    </p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="md:block relative items-center hidden space-x-8">
+                    <button onclick="toggleElement('blog')"
+                        class="group hover:text-gray-900 focus:outline-none inline-flex items-center text-base font-medium text-gray-500 bg-white rounded-md"
+                        aria-expanded="false">
+                        <span>Blog</span>
+
+                        <svg class="group-hover:text-gray-500 w-5 h-5 ml-2 text-gray-400"
+                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                            aria-hidden="true">
+                            <path fill-rule="evenodd"
+                                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                clip-rule="evenodd" />
+                        </svg>
+                    </button>
+                    <div class="left-1/2 sm:px-0 absolute z-10 hidden w-screen max-w-md px-2 mt-3 transform -translate-x-1/2"
+                        id="blog">
+                        <div class="ring-1 ring-black ring-opacity-5 overflow-hidden rounded-lg shadow-lg">
+                            <div class="sm:gap-8 sm:p-8 relative grid gap-6 px-5 py-6 uppercase bg-white">
+                                <a href="#" class="hover:bg-gray-50 flex items-start p-3 -m-3 rounded-lg">
+                                    <p class="text-md font-semibold text-gray-900">
+                                        Wedding Portfolio
+                                    </p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:hidden block">
+                    <button class="navbtn p-3 ml-auto" data-target="#navigation"
+                        onClick="toggleElement('navigation')">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+                                d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </nav>
+        <div id="navigation" class="absolute z-10 hidden w-screen p-6 bg-white">
+            <div class="flex flex-col">
+                <a href="landing.html"
+                    class="md:w-auto hover:underline hover:text-gray-700 px-3 py-2 text-gray-500">
+                    <span>Home</span>
+                </a>
+                <a href="#" class="md:w-auto hover:underline hover:text-gray-700 px-3 py-2 text-gray-500">
+                    <span class="">Video Editing Services</span>
+                </a>
+                <a href="#" class="md:w-auto hover:underline hover:text-gray-700 px-3 py-2 text-gray-500">
+                    <span class="">Our Work</span>
+                </a>
+                <a href="#" class="md:w-auto hover:underline hover:text-gray-700 px-3 py-2 text-gray-500">
+                    <span class="">View Pricing</span>
+                </a>
+                <a href="#" class="md:w-auto hover:underline hover:text-gray-700 px-3 py-2 text-gray-500">
+                    <span class="">My Account</span>
+                </a>
+                <a href="#" class="md:w-auto hover:underline hover:text-gray-700 px-3 py-2 text-gray-500">
+                    <span class="">Shop</span>
+                </a>
+                <a href="#" class="md:w-auto hover:underline hover:text-gray-700 px-3 py-2 text-gray-500">
+                    <span class="">Contact</span>
+                </a>
+                <a href="#" class="md:w-auto hover:underline hover:text-gray-700 px-3 py-2 text-gray-500">
+                    <span class="">Blog</span>
+                </a>
+            </div>
+        </div>
+        <section class="md:px-2 flex flex-col items-center justify-center px-12 py-12 bg-center">
+            <div class="flex flex-col items-center justify-center text-center">
+                <h2 class="md:text-4xl text-3xl font-extrabold text-gray-900 uppercase">
+                     Our works
+                </h2>
+                <img src="pictures/corporate-divider.png" alt="divider" class="h-18 w-96">
+                <p class="p-2 text-xl text-gray-500">
+                    LLorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ut convallis nunc, vel congue enim. Duis cursus viverra metus, ac imperdiet ipsum posuere et. Praesent eget ligula ut leo maximus lobortis sed at nunc. Aenean bibendum placerat vehicula.
+                </p>
+            </div>
+        </section>
+        <section class=" mx-auto">
+            <div class="md:flex-row md:space-x-2 pb-28 flex flex-col">
+                <button class="ripple hover:shadow-lg hover:bg-pink-600 focus:outline-none inline-block px-6 py-2 text-xs font-medium leading-6 text-center text-white uppercase transition bg-pink-500 rounded shadow-xl">
+                    SHOW-ALL
+                </button>
+                <button class="ripple hover:shadow-lg hover:bg-pink-600 focus:outline-none inline-block px-6 py-2 text-xs font-medium leading-6 text-center text-white uppercase transition bg-pink-500 rounded shadow-xl">
+                    WEDDING
+                </button>
+                <button class="ripple hover:shadow-lg hover:bg-pink-600 focus:outline-none inline-block px-6 py-2 text-xs font-medium leading-6 text-center text-white uppercase transition bg-pink-500 rounded shadow-xl">
+                    CORPORATE
+                </button>
+                <button class="ripple hover:shadow-lg hover:bg-pink-600 focus:outline-none inline-block px-6 py-2 text-xs font-medium leading-6 text-center text-white uppercase transition bg-pink-500 rounded shadow-xl">
+                    FAMILY
+                </button>
+                <button class="ripple hover:shadow-lg hover:bg-pink-600 focus:outline-none inline-block px-6 py-2 text-xs font-medium leading-6 text-center text-white uppercase transition bg-pink-500 rounded shadow-xl">
+                    YOUTUBE CONTENT
+                </button>
+                <button class="ripple hover:shadow-lg hover:bg-pink-600 focus:outline-none inline-block px-6 py-2 text-xs font-medium leading-6 text-center text-white uppercase transition bg-pink-500 rounded shadow-xl">
+                    LOGO ANIMATION
+                </button>
+                <button class="ripple hover:shadow-lg hover:bg-pink-600 focus:outline-none inline-block px-6 py-2 text-xs font-medium leading-6 text-center text-white uppercase transition bg-pink-500 rounded shadow-xl">
+                    VIRTUAL STAGE
+                </button>
+                <button class="ripple hover:shadow-lg hover:bg-pink-600 focus:outline-none inline-block px-6 py-2 text-xs font-medium leading-6 text-center text-white uppercase transition bg-pink-500 rounded shadow-xl">
+                    GRAPHIC DESIGN
+                </button>
+            </div>
+        </section>
+        <section class="pb-32">
+            <div class="md:grid-cols-4 grid grid-cols-1 space-x-4">
+                <div class="m-4">
+                     <iframe src="https://player.vimeo.com/video/203406009?color=de374b&title=0&byline=0" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="m-4">
+                     <iframe src="https://player.vimeo.com/video/290493377?color=de374b&title=0&byline=0"  frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="m-4">
+                     <iframe src="https://player.vimeo.com/video/286320109?color=de374b&title=0&byline=0"  frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="m-4">
+                     <iframe src="https://player.vimeo.com/video/239765192?title=0&byline=0&portrait=0" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="m-4">
+                 <iframe src="https://player.vimeo.com/video/151266342" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="m-4">
+                     <iframe src="https://player.vimeo.com/video/345362365"  frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="m-4">
+                     <iframe src="https://player.vimeo.com/video/69081992"  frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="m-4">
+                 <iframe src="https://player.vimeo.com/video/239386159?color=ffffff&title=0"  frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="m-4">
+                     <iframe src="https://player.vimeo.com/video/182793995"  frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="m-4">
+                      <iframe src="https://player.vimeo.com/video/149438240"  frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="m-4">
+                 <iframe src="https://player.vimeo.com/video/11163381?color=6c6e95&title=0&byline=0"  frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="m-4">
+                     <iframe src="https://player.vimeo.com/video/16892967" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+                </div>
+        </section>
+        <footer class="md:px-32 flex items-center justify-center py-4 bg-cover" style="background-image: url('pictures/bg-footer.png')">
+            <div class="flex flex-col items-center justify-center space-y-4">
+                <div>
+                    <img src="pictures/logo-1.png" alt="logo" class="h-14 w-auto">
+                </div>
+                <div class="md:flex-row md:space-x-8 flex flex-col items-center justify-center space-x-0 text-xl font-semibold">
+                    <a href="#" class="hover:underline hover:text-gray-700 text-gray-900">
+                        <span class="uppercase">About Us</span>
+                    </a>
+                    <a href="#" class="hover:underline hover:text-gray-700 text-gray-900">
+                        <span class="uppercase">Blog</span>
+                    </a>
+                    <a href="#" class="hover:underline hover:text-gray-700 text-gray-900">
+                        <span class="uppercase"> Jobs </span>
+                    </a>
+                    <a href="#" class="hover:underline hover:text-gray-700 text-gray-900">
+                        <span class="uppercase"> Press </span>
+                    </a>
+                    <a href="#" class="hover:underline hover:text-gray-700 text-gray-900">
+                        <span class="uppercase">Accessibility</span>
+                    </a>
+                    <a href="#" class="hover:underline hover:text-gray-700 text-gray-900">
+                        <span class="uppercase">Partners</span>
+                    </a>
+                </div>
+                <div class="flex flex-row items-center justify-center space-x-8 text-lg">
+                    <img src="pictures/footer-facebook.png" alt="fb" class="w-auto h-10">
+                    <img src="pictures/footer-youtube.png" alt="yt" class="w-auto h-10">
+                    <img src="pictures/footer-vimeo.png" alt="vm" class="w-auto h-10">
+                    <img src="pictures/footer-benance.png" alt="be" class="w-auto h-10">
+                </div>
+                <div class="flex flex-col items-center justify-center space-y-2">
+                    <h2 class="text-md"> Make safe payment with</h2>
+                    <img src="pictures/footer-paypal.png" alt="paypal" class="w-auto h-12">
+                </div>
+            </div>
+        </footer>
+
+            
+        
+
+
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"
+                integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin=" anonymous "></script>
+    <script src="./script.js "></script>
+</body>
+</html>
